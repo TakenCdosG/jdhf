@@ -73,6 +73,10 @@ header{
 	color: #ffac0e !important;
 	text-decoration: none;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	background: transparent;
+	color: #ffac0e !important;
+}
 .menu img{
 	width: 335px;
 	max-width: 100%;
