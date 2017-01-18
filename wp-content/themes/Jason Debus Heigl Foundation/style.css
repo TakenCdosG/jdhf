@@ -11,8 +11,11 @@ Version: 1.0
 body{
 	color:#000;
 	font-family: "proxima-nova",sans-serif !important;
+	background: #484747 !important;
 }
-
+.white-bg{
+	background: #fff;
+}
 
 /*header*/
 header{
