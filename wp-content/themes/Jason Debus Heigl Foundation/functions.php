@@ -39,7 +39,7 @@ function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer widget area 1', 'theme-slug' ),
         'id' => 'sidebar-1',
-        'description' => __( 'Sidebar to show Categories on Home Page', 'theme-slug' ),
+        'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h3 class="widgettitle">',
@@ -48,7 +48,7 @@ function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer widget area 2', 'theme-slug' ),
         'id' => 'sidebar-2',
-        'description' => __( 'Sidebar to show Categories on Home Page', 'theme-slug' ),
+        'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h3 class="widgettitle">',
@@ -57,7 +57,7 @@ function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer widget area 3', 'theme-slug' ),
         'id' => 'sidebar-3',
-        'description' => __( 'Sidebar to show Categories on Home Page', 'theme-slug' ),
+        'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h3 class="widgettitle">',
@@ -66,7 +66,7 @@ function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer widget area 4', 'theme-slug' ),
         'id' => 'sidebar-4',
-        'description' => __( 'Sidebar to show Categories on Home Page', 'theme-slug' ),
+        'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h3 class="widgettitle">',
@@ -75,7 +75,7 @@ function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer widget area 5', 'theme-slug' ),
         'id' => 'sidebar-5',
-        'description' => __( 'Sidebar to show Categories on Home Page', 'theme-slug' ),
+        'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h3 class="widgettitle">',
@@ -84,7 +84,7 @@ function theme_slug_widgets_init() {
     register_sidebar( array(
         'name' => __( 'copyright', 'theme-slug' ),
         'id' => 'sidebar-6',
-        'description' => __( 'Sidebar to show Categories on Home Page', 'theme-slug' ),
+        'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h3 class="widgettitle">',
