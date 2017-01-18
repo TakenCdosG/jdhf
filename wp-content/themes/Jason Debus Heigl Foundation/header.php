@@ -40,7 +40,6 @@
 						</div>
 					</div>
 					<div class="col-lg-8">
-						
 						<div class="navigation-container">
 							<nav class="navbar navbar-inverse" role="navigation">
 								<div class="navbar-header">
@@ -65,11 +64,11 @@
 							        );
 							    ?>
 							</nav>
-							
 							<div class="clearfix"></div>							
 						</div>
 
 					</div>
 				</div>
 			</div>
+			<a href="#"><div class="donate-button">Donate</div></a>
 		</header>
