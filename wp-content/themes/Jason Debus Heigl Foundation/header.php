@@ -25,13 +25,51 @@
 		<script src="<?php get_template_directory_uri();?>/js/html5shiv.js"></script>
 		<script src="<?php get_template_directory_uri();?>/js/respond.min.js"></script>
 		<![endif]-->
+		<script src="https://use.typekit.net/jfw1yzc.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<div class="donate"></div>
 		<header>
-			<div class="container">
-				<div class="row">
-					
+			<div class="container menu">
+				<div class="row menu">
+					<div class="col-lg-4 ">
+						<div class="logo">
+							<img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-8">
+						
+						<div class="navigation-container">
+							<nav class="navbar navbar-inverse" role="navigation">
+								<div class="navbar-header">
+							      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							        <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							      </button>
+							    </div>
+								<?php
+							        wp_nav_menu( array(
+							            'menu'              => 'main-menu',
+							            'theme_location'    => 'main-menu',
+							            'depth'             => 2,
+							            'container'         => 'div',
+							            'container_class'   => 'collapse navbar-collapse',
+							            'container_id'      => 'myNavbar',
+							            'menu_class'        => 'nav navbar-nav',
+							            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							            'walker'            => new wp_bootstrap_navwalker())
+							        );
+							    ?>
+							</nav>
+							
+							<div class="clearfix"></div>							
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</header>
