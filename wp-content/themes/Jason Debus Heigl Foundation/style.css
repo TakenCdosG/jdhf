@@ -101,7 +101,11 @@ header{
 .header .button{
 	position: absolute;
 }
-
+.no-header{
+	height:157px;
+	background-color: #333;
+	margin-bottom: 30px;
+}
 /*Footer*/
 
 .pre-footer{
