@@ -208,6 +208,8 @@ li.widget{
 /*Donations with background image*/
 .donation-w-bg{
 	padding: 40px 0;
+	background-size: cover !important;
+	background-position: center !important;
 }
 .donation-w-bg .content{
 	color:#fff;
