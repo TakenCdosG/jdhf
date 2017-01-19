@@ -44,7 +44,7 @@ else :
 		<div class="row">
 			<div class="content col-lg-12">
 				<div class="content">
-					<?php echo echo the_sub_field('panel_text') ?>
+					<?php echo the_sub_field('panel_text') ?>
 				</div>
 			</div>							
 		</div>
