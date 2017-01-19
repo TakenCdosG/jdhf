@@ -482,7 +482,6 @@ li.widget{
 	display: block;
 }
 .callout h1{
-	font-family: ProximaNova;
 	color:  #ffffff;
 	font-size: 150px;
 	font-weight: 700;
@@ -490,7 +489,6 @@ li.widget{
 	text-align: center;
 }
 .callout .text{
-	font-family: ProximaNova;
 	color:  #000000;
 	font-size: 50px;
 	font-weight: 700;
