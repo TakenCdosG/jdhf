@@ -21,7 +21,9 @@
 	        elseif( get_row_layout() == 'donation_w_background_image' ): 
 	        	get_template_part( 'templates/parts/donation_w_bg' );       	
 	        elseif( get_row_layout() == 'general_quote' ): 
-	        	get_template_part( 'templates/parts/general_quote' );
+	        	get_template_part( 'templates/parts/general_quote' );       	
+	        elseif( get_row_layout() == 'programs' ): 
+	        	get_template_part( 'templates/parts/programs' );
 	        endif;
 	    endwhile;
 	else :

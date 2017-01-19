@@ -3,7 +3,7 @@ if( get_sub_field('global') == 1):
     while ( have_rows('page_content', get_id_by_slug('global-modules')) ) : the_row();
         if( get_row_layout() == 'donation_w_background_image' ): 
         	?>
-				<div class="donation-w-bg" style="background:url(<?php echo do_shortcode(the_sub_field('background_image')) ?>);">
+				<div class="donation-w-bg" style="background:url(<?php the_sub_field('background_image') ?>);">
 					<div class="container">
 						<div class="row">
 							<div class="content col-lg-12">
@@ -26,7 +26,7 @@ if( get_sub_field('global') == 1):
     endwhile;	        				
 else :
 ?>
-<div class="donation-w-bg" style="background:url(<?php echo do_shortcode(the_sub_field('background_image')) ?>);">
+<div class="donation-w-bg" style="background:url(<?php echo the_sub_field('background_image') ?>);">
 <div class="container">
 	<div class="row">
 		<div class="content col-lg-12">

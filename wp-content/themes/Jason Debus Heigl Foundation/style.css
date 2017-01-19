@@ -208,7 +208,7 @@ li.widget{
 /*Donations with background image*/
 .donation-w-bg{
 	padding: 40px 0;
-	background-size: cover !important;
+	background-size: cover !important;	
 	background-position: center !important;
 }
 .donation-w-bg .content{
@@ -299,6 +299,57 @@ li.widget{
 }
 .general-quote em{
 	font-weight: 500;
+}
+/*Programs*/
+.programs{
+	padding: 30px 0;
+	background: #fff;
+}
+.programs .item{
+	background: #fff;
+	border: 1px solid #ffac0e;
+	margin-bottom: 60px;
+}
+.programs .content{
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+.programs .content h2{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.programs .item .image{
+	height: 269px;
+	width: 100%;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.programs .item .text{
+	padding:20px 20px 0;
+	min-height: 176px;
+}
+.programs .item .text h3{
+	margin-top:0;
+	font-weight: 700;
+	font-size: 30px;
+	min-height: 44px;
+}
+.programs .item .button a{
+	padding: 8px 12px;
+	border-radius: 3px;
+	border: 1px solid #ffac0e;
+	display: inline-block;
+	background: #fff;
+	text-decoration: none;
+	color:#302c2d;
+}
+.programs .item .button {
+	text-align: center;
+	top:20px;
+	position: relative;
 }
 
 /*Media queries*/
