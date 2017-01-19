@@ -17,7 +17,11 @@
 	        if( get_row_layout() == 'header' ): 
 				get_template_part( 'templates/parts/header' );        	
 	        elseif( get_row_layout() == 'statistics' ): 
-	        	get_template_part( 'templates/parts/statistics' );
+	        	get_template_part( 'templates/parts/statistics' );       	
+	        elseif( get_row_layout() == 'donation_w_background_image' ): 
+	        	get_template_part( 'templates/parts/donation_w_bg' );       	
+	        elseif( get_row_layout() == 'general_quote' ): 
+	        	get_template_part( 'templates/parts/general_quote' );
 	        endif;
 	    endwhile;
 	else :

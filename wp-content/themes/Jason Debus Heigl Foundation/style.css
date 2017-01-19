@@ -9,7 +9,7 @@ Version: 1.0
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 body{
-	color:#000;
+	color:#302c2d;
 	font-family: "proxima-nova",sans-serif !important;
 	background: #484747 !important;
 }
@@ -203,6 +203,100 @@ li.widget{
 }
 .statistics .text strong{
 	font-size: 60px;
+}
+
+/*Donations with background image*/
+.donation-w-bg{
+	padding: 40px 0;
+}
+.donation-w-bg .content{
+	color:#fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.donation-w-bg .content strong{
+	font-size: 40px;
+	font-weight: 800;
+}
+.donation-w-bg .text .give-form-wrap{
+	width:614px;
+	margin:0 auto;
+	background: #f9f9f9;
+	text-align: center;
+	max-width: 100%;
+}
+.donation-w-bg .text .give-form-wrap h2{
+	background: #000;
+	color:#fff;
+	font-size: 24px;
+	padding: 25px 15px;
+	margin-top: 50px;
+}
+.donation-w-bg .text .give-form{
+	padding: 20px 0 30px;
+}
+.donation-w-bg .text .give-currency-symbol{
+	background: #64bed1 !important;
+	border-color: #848484 !important;
+	padding: 35px 30px !important;
+    font-size: 40px !important;
+    line-height: 0 !important;
+}
+.donation-w-bg .text .give-amount-top{
+	font-size: 40px !important;
+    height:72px !important;
+    text-align: center;
+    min-width: 160px !important;
+    border-color: #848484 !important;
+}
+.donation-w-bg .text .give-donation-amount{
+	width:245px;
+	margin: 0 auto !important;
+}
+.donation-w-bg .text .give-recurring-donors-choice{
+	width:420px;
+	max-width: 90%;
+	background: #90cede;
+	border:16px solid #dadada;
+	border-top: 20px solid #dadada;
+	border-bottom: 20px solid #dadada;
+	margin:25px auto;
+
+}
+.donation-w-bg .text .give-recurring-donors-choice label{
+	font-size: 24px;
+	padding:10px 6px;
+	line-height: 1;
+}
+.donation-w-bg .text .give-recurring-donors-choice input[type="checkbox"]{
+	width: 30px;
+	height: 30px;
+	top:8px;
+}
+.donation-w-bg .text .give-btn{
+	margin:0 auto;
+	background: #64bed1;
+	padding: 20px 30px;
+	color:#fff;
+	font-size: 24px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*General Quote*/
+.general-quote{
+	background: #e2f3f7;
+	font-weight: 600;
+	font-size: 27px;
+	padding: 60px 0;
+}
+.general-quote strong{
+	font-weight: 800;
+	font-size: 35px;
+}
+.general-quote em{
+	font-weight: 500;
 }
 
 /*Media queries*/
