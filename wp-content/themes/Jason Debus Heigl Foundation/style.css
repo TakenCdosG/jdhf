@@ -435,6 +435,9 @@ li.widget{
 	color: #4f4c4d;
 }
 /*MAx buttons*/
+.maxbutton{
+	margin: 30px 0;
+}
 .maxbutton .mb-text{
 	font-family: "calluna",serif;
 }
