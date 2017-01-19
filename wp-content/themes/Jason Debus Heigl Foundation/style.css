@@ -434,7 +434,10 @@ li.widget{
 	font-weight: 800;
 	color: #4f4c4d;
 }
-
+/*MAx buttons*/
+.maxbutton-1.maxbutton.maxbutton-header-button .mb-text{
+	font-family: "calluna",serif;
+}
 /*Media queries*/
 
 /* Large Devices, Wide Screens */
