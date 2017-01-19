@@ -26,9 +26,7 @@ header{
 	z-index: 10;
 	width: 100%;
 }
-.container.menu{
-	width:90%;
-}
+
 .navigation-container{
 	margin-top: 20px;
 }
@@ -65,13 +63,12 @@ header{
 .nav li:nth-last-child(-n+2){
 	float: right;
 	border:1px solid #fff;
-	border-radius: 5px;
 	margin:0 5px;
 }
 .nav li a, .menu li a{
 	color: #fff !important;
 	font-weight: 900;
-	padding:10px 15px !important;
+	padding:13px 15px !important;
 	line-height: 10px !important;
 }
 .nav li a:hover, .menu li a:hover{
@@ -87,31 +84,7 @@ header{
 	max-width: 100%;
 }
 
-.header{
-	min-height: 500px;
-	background-size: cover !important;
-	background-position: center  !important;
-	position: relative;
-	display: block;
-}
-.header .content{
-	position: absolute;
-	top:50%;
-}
-.header .heading{
-	color:#fff;
-	font-size: 48px;
-	width:350px;
-}
-.header .button{
-	position: absolute;
-}
-.no-header{
-	height:210px;
-	background-color: #333;
-}
 /*Footer*/
-
 .pre-footer{
 	background: #bdbdbd;
 	padding: 30px 0 25px;
@@ -157,11 +130,12 @@ li.widget{
 	float: left;
 	list-style: none;
 }
+
 /*Donate Button*/
 .donate-button{
 	position: fixed;
 	right: 0;
-	top:30%;
+	top:40%;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 	background: #64bed1;
@@ -172,12 +146,64 @@ li.widget{
 	font-size: 18px;
 }
 
+/*Panels*/
 
+/*header*/
+.header{
+	min-height: 770px;
+	background-size: cover !important;
+	background-position: center  !important;
+	position: relative;
+	display: block;
+}
+.header .content{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+.header .heading{
+	color:#fff;
+	width:415px;
+	font-size: 58px;
+	font-weight: 700 !important;
+}
+.header .button{
+	position: absolute;
+}
+.no-header{
+	height:210px;
+	background-color: #333;
+}
 
-
-
-
-
+/*statistics*/
+.statistics{
+	background: #fff;
+	padding:25px 0;
+}
+.statistics .content, .statistics .text{
+	line-height: 1.2;
+}
+.statistics .content{
+	color: #5db8cf;
+	font-size: 32px;
+}
+.statistics .image{
+	width: 250px;
+	height: 250px;
+	border:13px solid #ffac0e;
+	margin: 30px auto;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	border-radius: 50%;
+}
+.statistics .text{
+	font-weight: 800;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.statistics .text strong{
+	font-size: 60px;
+}
 
 /*Media queries*/
 
@@ -267,8 +293,9 @@ li.widget{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
-
+	.header{
+		min-height: 600px;
+	}
 
 }
 
@@ -279,10 +306,23 @@ li.widget{
 	.pre-footer .widget{
 		text-align: center;
 	}
+	.header{
+		min-height: 500px;
+	}
+	.header .heading{
+		font-size: 40px;
+	}
+	.header .content{
+		top:65%;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
+
+	.header{
+		min-height: 385px;
+	}
 
 }
 
@@ -309,7 +349,6 @@ li.widget{
 @media (max-width : 567px) {
 	/*Mobile menu*/
 	.navbar button{
-		width: 100%;
 		margin: 0;
 		border-bottom: 1px solid #3e3e3e !important;
 	}

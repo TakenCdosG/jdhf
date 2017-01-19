@@ -12,8 +12,6 @@ if( get_sub_field('global') == 1):
 					</div>
 				</div>
         	<?php
-        elseif( get_row_layout() == 'otro_mas' ): 
-        	the_sub_field('texts');
         endif;
     endwhile;	        				
 else :

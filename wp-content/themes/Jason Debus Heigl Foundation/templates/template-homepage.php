@@ -16,8 +16,8 @@
 	    while ( have_rows('page_content') ) : the_row();
 	        if( get_row_layout() == 'header' ): 
 				get_template_part( 'templates/parts/header' );        	
-	        elseif( get_row_layout() == 'otro_mas' ): 
-	        	the_sub_field('texts');
+	        elseif( get_row_layout() == 'statistics' ): 
+	        	get_template_part( 'templates/parts/statistics' );
 	        endif;
 	    endwhile;
 	else :
