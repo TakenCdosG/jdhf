@@ -512,6 +512,11 @@ li.widget{
 		border: none;
 		margin: 0;
 	}
+	/*News listing*/
+	.news-listing .post .title{
+		font-size: 32px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
