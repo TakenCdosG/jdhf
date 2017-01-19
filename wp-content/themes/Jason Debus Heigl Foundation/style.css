@@ -348,7 +348,8 @@ li.widget{
 	display: inline-block;
 	background: #fff;
 	text-decoration: none;
-	color:#302c2d;
+	color:#302c2d;font-weight: 700;
+    font-size: 18px;
 }
 .programs .item .button {
 	text-align: center;

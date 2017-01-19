@@ -27,7 +27,9 @@
 	        elseif( get_row_layout() == 'news_listing' ): 
 	        	get_template_part( 'templates/parts/load_news' );       	
 	        elseif( get_row_layout() == 'button_call_to_action' ): 
-	        	get_template_part( 'templates/parts/button_cta' );
+	        	get_template_part( 'templates/parts/button_cta' );       	
+	        elseif( get_row_layout() == 'general_content' ): 
+	        	get_template_part( 'templates/parts/general_content' );
 	        endif;
 	    endwhile;
 	else :
