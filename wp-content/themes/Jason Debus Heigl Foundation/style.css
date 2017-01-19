@@ -205,7 +205,82 @@ li.widget{
 .statistics .text strong{
 	font-size: 60px;
 }
+/*Donation Form Basic*/
+.donation-basic .text .give-form-wrap{
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 150px;
+	background: #f9f9f9;
+	text-align: center;
+	max-width: 100%;
+}
+.donation-basic .text .give-form-wrap h2{
+	background: #ffac0e;
+	color:#000000;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 25px 15px;
+	margin-top: 100px;
+}
+.donation-basic .text .give-form-content-wrap p{
+	background: #000000;
+	color:#FFFFFF;
+	font-size: 24px;
+	padding: 25px 15px;
+	margin-top: -15px;
+}
+.donation-basic .text .give-form{
+	padding: 20px 0 30px;
+}
+.donation-basic .text .give-currency-symbol{
+	background: #64bed1 !important;
+	border-color: #848484 !important;
+	padding: 35px 30px !important;
+	font-size: 40px !important;
+	line-height: 0 !important;
+}
+.donation-basic .text .give-amount-top{
+	font-size: 40px !important;
+	height:72px !important;
+	text-align: center;
+	min-width: 160px !important;
+	border-color: #848484 !important;
+}
+.donation-basic .text .give-donation-amount{
+	width:245px;
+	margin: 0 auto !important;
+}
+.donation-basic .text .give-recurring-donors-choice{
+	width:420px;
+	max-width: 90%;
+	background: #90cede;
+	border:16px solid #dadada;
+	border-top: 20px solid #dadada;
+	border-bottom: 20px solid #dadada;
+	margin:25px auto;
 
+}
+.donation-basic .text .give-recurring-donors-choice label{
+	font-size: 24px;
+	padding:10px 6px;
+	line-height: 1;
+}
+.donation-basic .text .give-recurring-donors-choice input[type="checkbox"]{
+	width: 30px;
+	height: 30px;
+	top:8px;
+}
+.donation-basic .text .give-btn{
+	margin:0 auto;
+	background: #64bed1;
+	padding: 20px 30px;
+	color:#fff;
+	font-size: 24px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
 /*Donations with background image*/
 .donation-w-bg{
 	padding: 40px 0;
