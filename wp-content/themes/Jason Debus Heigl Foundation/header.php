@@ -6,7 +6,7 @@
  */
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="no-js ie6" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
@@ -43,37 +43,34 @@
 						<div class="navigation-container">
 							<nav class="navbar navbar-inverse" role="navigation">
 								<div class="navbar-header">
-							      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							        <span class="sr-only">Toggle navigation</span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							      </button>
-							    </div>
+								  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								</div>
 								<?php
-							        wp_nav_menu( array(
-							            'menu'              => 'main-menu',
-							            'theme_location'    => 'main-menu',
-							            'depth'             => 2,
-							            'container'         => 'div',
-							            'container_class'   => 'collapse navbar-collapse',
-							            'container_id'      => 'myNavbar',
-							            'menu_class'        => 'nav navbar-nav',
-							            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-							            'walker'            => new wp_bootstrap_navwalker())
-							        );
-							    ?>
+									wp_nav_menu( array(
+										'menu'              => 'main-menu',
+										'theme_location'    => 'main-menu',
+										'depth'             => 2,
+										'container'         => 'div',
+										'container_class'   => 'collapse navbar-collapse',
+										'container_id'      => 'myNavbar',
+										'menu_class'        => 'nav navbar-nav',
+										'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+										'walker'            => new wp_bootstrap_navwalker())
+									);
+								?>
 							</nav>
-
-
 							<div class="clearfix"></div>
-
 						</div>
-
 					</div>
 				</div>
 			</div>
 			
+			<!-- Temporal Fixed Button  -->
 			<a href="#"><div class="donate-button">Donate</div></a>
 			<script type="text/javascript">
 		</script>
