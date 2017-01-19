@@ -1,6 +1,6 @@
 <?php
 if( get_sub_field('global') == 1):
-    while ( have_rows('page_content', 14) ) : the_row();
+    while ( have_rows('page_content', get_id_by_slug('global-modules')) ) : the_row();
         if( get_row_layout() == 'statistics' ): 
         	?>
 				<div class="statistics">
