@@ -125,6 +125,7 @@ li.widget{
 	font-size: 16px;
 	font-weight: 400;
 	min-height: 100px;
+	font-family: "calluna",serif;
 }
 .footer .copyright li{
 	float: left;
@@ -353,6 +354,7 @@ li.widget{
 	text-align: center;
 	top:20px;
 	position: relative;
+	font-family: "calluna",serif;
 }
 /*News Listing*/
 .news-listing{
@@ -370,6 +372,7 @@ li.widget{
 .news-listing .post .date{
 	font-size: 18px;
 	font-weight: bold;
+	font-family: "calluna",serif;
 }
 .news-listing .post .title{
 	color:#8e8886;
@@ -381,6 +384,7 @@ li.widget{
 .news-listing .post .readmore{
 	position: absolute;
 	bottom: 20px;
+	font-family: "calluna",serif;
 }
 .news-listing .post .readmore a{
 	color:#302c2d;
