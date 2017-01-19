@@ -109,11 +109,11 @@ li.widget{
 .pre-footer h3{
 	font-weight: 800;
 }
-.pre-footer .social{
+.pre-footer .social, .pre-footer .social a{
 	margin-top: 10px;
 	text-align: center;
 	color:#fff;
-	font-size: 35px;
+	font-size: 35px !important;
 }
 .pre-footer .social i{
 	margin:0 10px;
