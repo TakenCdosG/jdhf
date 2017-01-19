@@ -335,7 +335,10 @@ li.widget{
 	margin-top:0;
 	font-weight: 700;
 	font-size: 30px;
-	min-height: 44px;
+	min-height: 66px;
+}
+.programs .item .text p{
+	min-height: 100px;
 }
 .programs .item .button a{
 	padding: 8px 12px;
@@ -386,6 +389,9 @@ li.widget{
 	padding:5px 20px 0 0;
 	border-top: 1px solid #e4e4e4;
 }
+.news-listing .post .readmore a:hover{
+	text-decoration: none;
+}
 
 /*CallOut*/
 .callout{
@@ -410,6 +416,18 @@ li.widget{
 	font-weight: 700;
 	margin-top: -85px;
 	text-align: center;
+}
+/*Button CTA*/
+.button-cta{
+	background: #fff;
+	padding: 30px 0;
+	font-size: 32px;
+	font-weight: 600;
+}
+.button-cta strong{
+	font-size: 40px;
+	font-weight: 800;
+	color: #4f4c4d;
 }
 
 /*Media queries*/
@@ -506,7 +524,16 @@ li.widget{
 	.news-listing .post{
 		min-height: initial;
 	}
-
+	/*Programs*/
+	.programs .item .text h3{
+		min-height: 100px;
+	}
+	.programs .item .text h3.oneline{
+		line-height: 100px;
+	}
+	.programs .item .text p{
+		min-height: 140px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -524,6 +551,13 @@ li.widget{
 	}
 	.header .content{
 		top:65%;
+	}
+	/*Programs*/
+	.programs .item .text h3, .programs .item .text p, .programs .item .text{
+		min-height: initial;
+	}
+	.programs .item .text h3.oneline{
+		line-height: initial;
 	}
 }
 
