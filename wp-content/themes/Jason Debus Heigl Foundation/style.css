@@ -506,9 +506,12 @@ li.widget{
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+	/*Header*/
 	.header{
 		min-height: 385px;
+	}
+	.header .heading{
+		max-width: 300px;
 	}
 
 }
