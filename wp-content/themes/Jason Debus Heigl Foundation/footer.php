@@ -45,10 +45,10 @@
 						if(is_active_sidebar('sidebar-5')){
 							dynamic_sidebar('sidebar-5');
 						}
-					?>					
+					?>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 	<div class="footer">
 		<div class="copyright">
@@ -61,17 +61,17 @@
 								if(is_active_sidebar('sidebar-6')){
 									dynamic_sidebar('sidebar-6');
 								}
-							?>	
-							<div class="clearfix"></div>						
+							?>
+							<div class="clearfix"></div>
 						</ul>
 
-					</div>					
+					</div>
 				</div>
 			</div>
 
 		</div>
 	</div>
-	
+
 </footer>
 <?php wp_footer(); ?>
 </div>

@@ -45,7 +45,7 @@ header{
 }
 .navbar-collapse{
 	padding-left:0 !important;
-	padding-right:0 !important;  
+	padding-right:0 !important;
 }
 .menu{
 	list-style: none;
@@ -121,7 +121,7 @@ li.widget{
 .footer{
 	background: #484747;
 	color:#fff;
-	padding-top: 25px; 
+	padding-top: 25px;
 	font-size: 16px;
 	font-weight: 400;
 	min-height: 100px;
@@ -387,6 +387,31 @@ li.widget{
 	border-top: 1px solid #e4e4e4;
 }
 
+/*CallOut*/
+.callout{
+	min-height: 450px;
+	background-size: cover !important;
+	background-position: center  !important;
+	position: relative;
+	display: block;
+}
+.callout h1{
+	font-family: ProximaNova;
+	color:  #ffffff;
+	font-size: 150px;
+	font-weight: 700;
+	line-height: 280px;
+	text-align: center;
+}
+.callout .text{
+	font-family: ProximaNova;
+	color:  #000000;
+	font-size: 50px;
+	font-weight: 700;
+	margin-top: -85px;
+	text-align: center;
+}
+
 /*Media queries*/
 
 /* Large Devices, Wide Screens */
@@ -459,7 +484,7 @@ li.widget{
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
@@ -469,8 +494,6 @@ li.widget{
     	border: none;
     	margin: 0;
     }
-
-
 }
 
 /* Medium Devices, Desktops */
@@ -504,7 +527,7 @@ li.widget{
 	}
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	/*Header*/
 	.header{
@@ -516,9 +539,9 @@ li.widget{
 
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-    
+
 }
 
 
@@ -554,4 +577,3 @@ li.widget{
 		width:800px;
 	}
 }
-

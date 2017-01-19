@@ -83,7 +83,7 @@ function theme_slug_widgets_init() {
 	'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name' => __( 'copyright', 'theme-slug' ),
+        'name' => __( 'Copyright', 'theme-slug' ),
         'id' => 'sidebar-6',
         'description' => __( 'Sidebar for footer contents', 'theme-slug' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',

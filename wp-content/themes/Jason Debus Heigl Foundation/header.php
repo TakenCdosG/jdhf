@@ -64,14 +64,17 @@
 							        );
 							    ?>
 							</nav>
-							<div class="clearfix"></div>							
+
+
+							<div class="clearfix"></div>
+
 						</div>
 
 					</div>
 				</div>
 			</div>
+			
 			<a href="#"><div class="donate-button">Donate</div></a>
-			<script type="text/javascript">			
+			<script type="text/javascript">
 		</script>
 		</header>
-	
