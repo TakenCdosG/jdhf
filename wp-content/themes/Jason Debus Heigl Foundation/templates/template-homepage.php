@@ -23,7 +23,9 @@
 	        elseif( get_row_layout() == 'general_quote' ): 
 	        	get_template_part( 'templates/parts/general_quote' );       	
 	        elseif( get_row_layout() == 'programs' ): 
-	        	get_template_part( 'templates/parts/programs' );
+	        	get_template_part( 'templates/parts/programs' );       	
+	        elseif( get_row_layout() == 'news_listing' ): 
+	        	get_template_part( 'templates/parts/load_news' );
 	        endif;
 	    endwhile;
 	else :

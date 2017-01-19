@@ -15,7 +15,7 @@ if( get_sub_field('global') == 1):
 						<div class="row">
 							<div class="col-sm-4">
 								<div class="item">
-									<div class="image" style="background:url(<?php echo do_shortcode(the_sub_field('column_1_image')) ?>);"></div>
+									<div class="image" style="background:url(<?php the_sub_field('column_1_image') ?>);"></div>
 									<div class="text">
 										<?php the_sub_field('column_1_text') ?>
 									</div>
@@ -26,7 +26,7 @@ if( get_sub_field('global') == 1):
 							</div>
 							<div class="col-sm-4">
 								<div class="item">
-									<div class="image" style="background:url(<?php echo do_shortcode(the_sub_field('column_2_image')) ?>);"></div>
+									<div class="image" style="background:url(<?php the_sub_field('column_2_image') ?>);"></div>
 									<div class="text">
 										<?php the_sub_field('column_2_text') ?>
 									</div>
@@ -37,7 +37,7 @@ if( get_sub_field('global') == 1):
 							</div>
 							<div class="col-sm-4">
 								<div class="item">
-									<div class="image" style="background:url(<?php echo do_shortcode(the_sub_field('column_3_image')) ?>);"></div>
+									<div class="image" style="background:url(<?php the_sub_field('column_3_image') ?>);"></div>
 									<div class="text">
 										<?php the_sub_field('column_3_text') ?>
 									</div>
@@ -65,7 +65,7 @@ else :
 		</div>
 		<div class="row">
 			<div class="col-sm-4">
-				<div class="image" style="background:url(<?php echo do_shortcode(the_sub_field('column_1_image')) ?>);"></div>
+				<div class="image" style="background:url(<?php the_sub_field('column_1_image') ?>);"></div>
 				<div class="text">
 					<?php the_sub_field('column_1_text') ?>
 				</div>
@@ -74,7 +74,7 @@ else :
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="image" style="background:url(<?php echo do_shortcode(the_sub_field('column_2_image')) ?>);"></div>
+				<div class="image" style="background:url(<?php the_sub_field('column_2_image') ?>);"></div>
 				<div class="text">
 					<?php the_sub_field('column_2_text') ?>
 				</div>
@@ -83,7 +83,7 @@ else :
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="image" style="background:url(<?php echo do_shortcode(the_sub_field('column_3_image')) ?>);"></div>
+				<div class="image" style="background:url(<?php the_sub_field('column_3_image') ?>);"></div>
 				<div class="text">
 					<?php the_sub_field('column_3_text') ?>
 				</div>
