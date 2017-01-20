@@ -753,6 +753,9 @@ img.aligncenter {
 	.dog-list .dog .image{
 		height: 230px;
 	}
+	.dog-list .dog .meta-holder{
+		min-height: 254px;
+	}
 }
 
 /* Small Devices, Tablets */
