@@ -508,7 +508,7 @@ li.widget{
 	color:  #000000;
 	font-size: 50px;
 	font-weight: 700;
-	margin-top: -85px;
+	/*margin-top: -85px;*/
 	text-align: center;
 	line-height: 1;
 }
