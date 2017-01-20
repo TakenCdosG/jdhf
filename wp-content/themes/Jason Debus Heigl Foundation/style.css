@@ -726,7 +726,7 @@ img.aligncenter {
 		min-height: 500px;
 	}
 	.header .heading{
-		font-size: 40px;
+		font-size: 40px !important;
 	}
 	.header .content{
 		top:53%;
@@ -747,7 +747,7 @@ img.aligncenter {
 		min-height: 385px;
 	}
 	.header .heading{
-		max-width: 300px;
+		max-width: 288px;
 	}
 
 }
