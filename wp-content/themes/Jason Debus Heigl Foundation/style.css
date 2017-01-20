@@ -495,11 +495,12 @@ li.widget{
 	background-position: center  !important;
 	position: relative;
 	display: block;
+	padding: 35px 0;
 }
 .callout h1{
 	color:  #ffffff;
 	font-size: 150px !important;
-	line-height: 280px;
+	/*line-height: 280px;*/
 	text-align: center;
 	margin-bottom: 10px !important;
 }
@@ -509,6 +510,10 @@ li.widget{
 	font-weight: 700;
 	margin-top: -85px;
 	text-align: center;
+	line-height: 1;
+}
+.callout p{
+	margin-bottom: 0;
 }
 /*Button CTA*/
 .button-cta{
