@@ -93,7 +93,7 @@ function theme_slug_widgets_init() {
     ) );
 }
 
-/**/
+/*Get Global Modules ID*/
 // get_id_by_slug('any-page-slug');
 
 function get_id_by_slug($page_slug) {
@@ -104,3 +104,65 @@ function get_id_by_slug($page_slug) {
         return null;
     }
 }
+
+/*Dog CPT*/
+
+function cptui_register_my_cpts_dog() {
+
+    /**
+     * Post Type: Dogs.
+     */
+
+    $labels = array(
+        "name" => __( 'Dogs', '' ),
+        "singular_name" => __( 'Dog', '' ),
+        "menu_name" => __( 'Dogs', '' ),
+        "all_items" => __( 'All dogs', '' ),
+        "add_new" => __( 'Add new', '' ),
+        "add_new_item" => __( 'Add new dog', '' ),
+        "edit_item" => __( 'Edit Dog', '' ),
+        "new_item" => __( 'New dog', '' ),
+        "view_item" => __( 'View dog', '' ),
+        "view_items" => __( 'View dogs', '' ),
+        "search_items" => __( 'Search dog', '' ),
+        "not_found" => __( 'No dogs found', '' ),
+        "not_found_in_trash" => __( 'No dogs found in trash', '' ),
+        "parent_item_colon" => __( 'Parent dog', '' ),
+        "featured_image" => __( 'Dog image', '' ),
+        "set_featured_image" => __( 'Set dog image', '' ),
+        "remove_featured_image" => __( 'Remove dog image', '' ),
+        "use_featured_image" => __( 'Use dog image', '' ),
+        "archives" => __( 'All dogs', '' ),
+        "insert_into_item" => __( 'Insert into dog', '' ),
+        "uploaded_to_this_item" => __( 'Uploaded to this dog', '' ),
+        "filter_items_list" => __( 'Filter dog list', '' ),
+        "items_list_navigation" => __( 'Dogs list navigation', '' ),
+        "items_list" => __( 'Dogs list', '' ),
+        "attributes" => __( 'Dogs attributes', '' ),
+        "parent_item_colon" => __( 'Parent dog', '' ),
+    );
+
+    $args = array(
+        "label" => __( 'Dogs', '' ),
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "show_in_rest" => false,
+        "rest_base" => "",
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array( "slug" => "dog", "with_front" => true ),
+        "query_var" => true,
+        "supports" => array( "title", "editor", "thumbnail"),
+    );
+
+    register_post_type( "dog", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_dog' );

@@ -31,6 +31,9 @@ h2{
 h3{
 	font-size: 30px !important;
 }
+a, a:hover{
+	text-decoration: none !important;
+}
 /*header*/
 header{
 	position: absolute;
@@ -38,7 +41,6 @@ header{
 	z-index: 10;
 	width: 100%;
 }
-
 .navigation-container{
 	margin-top: 20px;
 }
@@ -85,7 +87,6 @@ header{
 }
 .nav li a:hover, .menu li a:hover{
 	color: #ffac0e !important;
-	text-decoration: none;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
 	background: transparent !important;
@@ -437,7 +438,6 @@ li.widget{
 	border: 1px solid #ffac0e;
 	display: inline-block;
 	background: #fff;
-	text-decoration: none;
 	color:#302c2d;font-weight: 700;
     font-size: 18px;
 }
@@ -484,9 +484,7 @@ li.widget{
 	padding:5px 20px 0 0;
 	border-top: 1px solid #e4e4e4;
 }
-.news-listing .post .readmore a:hover{
-	text-decoration: none;
-}
+
 
 /*CallOut*/
 .callout{
@@ -602,8 +600,39 @@ img.aligncenter {
 .founders .content{
 	margin-bottom: 30px;
 }
-
-
+/*Dog List*/
+.dog-list{
+	background: #c3cac8;
+}
+.dog-list .dog{
+	background:#fff;
+	margin-bottom: 35px;
+}
+.dog-list .dog .meta-holder{
+	padding:25px;
+	font-size: 17px;
+}
+.dog-list .dog .image{
+	height: 320px;
+	background-size: cover !important;
+	background-position: center;
+	max-width: 100%;
+}
+.dog-list .dog .title{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.dog-list .dog .meta{
+	margin:5px 0;
+}
+.dog-list .dog .readmore{
+	text-transform: uppercase;
+	margin: 35px 0 0;
+}
+.dog-list .dog .readmore a{
+	color: #68c4db;
+}
 /*Media queries*/
 
 /* Large Devices, Wide Screens */
@@ -713,6 +742,10 @@ img.aligncenter {
 	.programs .item .text p{
 		min-height: 140px;
 	}
+	/*DOgs List*/
+	.dog-list .dog .image{
+		height: 230px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -750,6 +783,10 @@ img.aligncenter {
 	}
 	.callout p{
 		font-size: 45px;
+	}
+	/*DOgs List*/
+	.dog-list .dog .image{
+		height: 350px;
 	}
 }
 

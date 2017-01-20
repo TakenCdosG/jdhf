@@ -35,7 +35,9 @@
 	        elseif( get_row_layout() == 'two_column_content' ): 
 	        	get_template_part( 'templates/parts/two_column_content' );       	
 	        elseif( get_row_layout() == 'founders' ): 
-	        	get_template_part( 'templates/parts/founders' );
+	        	get_template_part( 'templates/parts/founders' );       	
+	        elseif( get_row_layout() == 'dogs_list' ): 
+	        	get_template_part( 'templates/parts/load_dogs' );
 	        endif;
 	    endwhile;
 	else :
