@@ -403,8 +403,8 @@ li.widget{
 	margin-bottom: 60px;
 }
 .programs .content{
-	font-weight: 600;
 	line-height: 1;
+	font-size: 20px;
 	margin-bottom: 35px;
 }
 .programs .content h2{
@@ -498,8 +498,7 @@ li.widget{
 }
 .callout h1{
 	color:  #ffffff;
-	font-size: 150px;
-	font-weight: 700;
+	font-size: 150px !important;
 	line-height: 280px;
 	text-align: center;
 }
