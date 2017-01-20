@@ -504,16 +504,19 @@ li.widget{
 	text-align: center;
 	margin-bottom: 10px !important;
 }
-.callout .text{
+.callout h2{
+	color:  #ffffff;
+	font-size: 100px !important;
+	text-align: center;
+	margin-bottom: 10px !important;
+}
+.callout p{
 	color:  #000000;
 	font-size: 50px;
 	font-weight: 700;
 	/*margin-top: -85px;*/
 	text-align: center;
 	line-height: 1;
-}
-.callout p{
-	margin-bottom: 0;
 }
 /*Button CTA*/
 .button-cta{
