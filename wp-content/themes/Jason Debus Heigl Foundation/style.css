@@ -740,16 +740,16 @@ img.aligncenter {
 	}
 	.callout h1{
 
-		font-size: 75px !important;
+		font-size: 105px !important;
 	}
 	.callout h2{
-		font-size: 49px !important;
+		font-size: 65px !important;
 	}
 	.callout h3{
-		font-size: 18px !important;
+		font-size: 27px !important;
 	}
 	.callout p{
-		font-size: 25px;
+		font-size: 45px;
 	}
 }
 
