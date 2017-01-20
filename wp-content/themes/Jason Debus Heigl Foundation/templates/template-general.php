@@ -31,7 +31,9 @@
 	        elseif( get_row_layout() == 'general_content' ): 
 	        	get_template_part( 'templates/parts/general_content' );
 	        elseif( get_row_layout() == 'callout' ):
-				get_template_part( 'templates/parts/callout');
+				get_template_part( 'templates/parts/callout');       	
+	        elseif( get_row_layout() == 'two_column_content' ): 
+	        	get_template_part( 'templates/parts/two_column_content' );
 	        endif;
 	    endwhile;
 	else :

@@ -1,7 +1,7 @@
 <?php
 if( get_sub_field('global') == 1):
     while ( have_rows('page_content', get_id_by_slug('global-modules')) ) : the_row();
-        if( get_row_layout() == 'general_quote' ): 
+        if( get_row_layout() == 'general_content' ): 
         	?>
 				<div class="general-content">
 					<div class="container">
