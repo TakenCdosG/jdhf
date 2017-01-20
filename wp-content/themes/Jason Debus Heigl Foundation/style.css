@@ -722,6 +722,10 @@ img.aligncenter {
 	.news-listing .post .title{
 		font-size: 32px;
 	}
+	/*Dogs list*/
+	.dog-list .content{
+		padding: 0 0;
+	}
 
 }
 
