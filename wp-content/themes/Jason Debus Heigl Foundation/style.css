@@ -604,6 +604,9 @@ img.aligncenter {
 .dog-list{
 	background: #c3cac8;
 }
+.dog-list .content{
+	padding: 0 80px;
+}
 .dog-list .dog{
 	background:#fff;
 	margin-bottom: 35px;
