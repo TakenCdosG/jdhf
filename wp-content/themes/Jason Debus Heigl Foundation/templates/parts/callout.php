@@ -13,12 +13,7 @@ if( get_sub_field('global') == 1):
 				<div class="callout" style="background:url(<?php the_sub_field('background_image') ?>)">
 					<div class="row">
 						<div class="center-block">
-							<h1><?php the_sub_field('heading_text');?></h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="center-block">
-							<p class="text"><?php the_sub_field('text');?></p>
+							<?php the_sub_field('heading_text');?>
 						</div>
 					</div>
 				</div>
@@ -31,12 +26,7 @@ else :
 <div class="callout" style="background:url(<?php the_sub_field('background_image') ?>)">
 	<div class="row">
 		<div class="center-block">
-			<h1><?php the_sub_field('heading_text');?></h1>
-		</div>
-	</div>
-	<div class="row">
-		<div class="center-block">
-			<p class="text"><?php the_sub_field('text');?></p>
+			<?php the_sub_field('heading_text');?>
 		</div>
 	</div>
 </div>
