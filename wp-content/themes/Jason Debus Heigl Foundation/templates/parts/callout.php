@@ -11,9 +11,13 @@ if( get_sub_field('global') == 1):
 		if( get_row_layout() == 'callout' ):
 			?>
 				<div class="callout" style="background:url(<?php the_sub_field('background_image') ?>)">
-					<div class="row">
-						<div class="center-block">
-							<?php the_sub_field('heading_text');?>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="center-block">
+									<?php the_sub_field('heading_text');?>
+								</div>							
+							</div>
 						</div>
 					</div>
 				</div>
@@ -24,9 +28,13 @@ else :
 ?>
 
 <div class="callout" style="background:url(<?php the_sub_field('background_image') ?>)">
-	<div class="row">
-		<div class="center-block">
-			<?php the_sub_field('heading_text');?>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="center-block">
+					<?php the_sub_field('heading_text');?>
+				</div>							
+			</div>
 		</div>
 	</div>
 </div>

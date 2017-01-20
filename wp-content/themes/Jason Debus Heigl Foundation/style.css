@@ -738,6 +738,19 @@ img.aligncenter {
 	.programs .item .text h3.oneline{
 		line-height: initial;
 	}
+	.callout h1{
+
+		font-size: 75px !important;
+	}
+	.callout h2{
+		font-size: 49px !important;
+	}
+	.callout h3{
+		font-size: 18px !important;
+	}
+	.callout p{
+		font-size: 25px;
+	}
 }
 
 /* Extra Small Devices, Phones */
