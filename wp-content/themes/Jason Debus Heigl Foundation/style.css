@@ -513,6 +513,7 @@ li.widget{
 }
 .callout h3{
 	font-size: 35px !important;
+	margin-bottom: 0 !important;
 }
 .callout p{
 	color:  #000000;
