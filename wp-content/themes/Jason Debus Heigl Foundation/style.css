@@ -506,9 +506,10 @@ li.widget{
 }
 .callout h2{
 	color:  #ffffff;
-	font-size: 100px !important;
+	font-size: 98px !important;
 	text-align: center;
 	margin-bottom: 10px !important;
+	line-height: 0.8;
 }
 .callout p{
 	color:  #000000;
@@ -532,7 +533,7 @@ li.widget{
 }
 /*MAx buttons*/
 .maxbutton{
-	margin: 30px 0;
+	margin: 30px 0 0;
 }
 .maxbutton .mb-text{
 	font-family: "calluna",serif;
