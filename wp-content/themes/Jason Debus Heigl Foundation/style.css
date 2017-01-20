@@ -501,7 +501,7 @@ li.widget{
 	font-size: 150px !important;
 	line-height: 280px;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 }
 .callout .text{
 	color:  #000000;
