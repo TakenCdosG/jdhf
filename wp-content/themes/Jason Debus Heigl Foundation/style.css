@@ -584,6 +584,9 @@ img.aligncenter {
 	padding-left: 20px;
 }
 /*Founders*/
+.founders{
+	background: #fff;
+}
 .founders img{
 	width: 100%;
 	margin-bottom: 30px;
