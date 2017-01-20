@@ -575,6 +575,17 @@ img.aligncenter {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e9eb', endColorstr='#a8dbe6',GradientType=0 ); /* IE6-9 */
 
 }
+.two-column-content ul{
+	padding-left: 20px;
+}
+/*Founders*/
+.founders img{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.founders .content{
+	margin-bottom: 30px;
+}
 
 
 /*Media queries*/
