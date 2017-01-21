@@ -41,7 +41,9 @@
 			elseif( get_row_layout() == 'bio_column_right' ):
 				get_template_part( 'templates/parts/bio-column-right' );
 			elseif( get_row_layout() == 'bio_column_left' ):
-				get_template_part( 'templates/parts/bio-column-left' );
+				get_template_part( 'templates/parts/bio-column-left' );       	
+	        elseif( get_row_layout() == 'general_page_content' ): 
+	        	get_template_part( 'templates/parts/general_page_content' );
 	        endif;
 	    endwhile;
 	else :

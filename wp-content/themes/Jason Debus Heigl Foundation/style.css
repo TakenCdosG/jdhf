@@ -684,9 +684,6 @@ img.aligncenter {
 	color: #68c4db;
 }
 /*Dog Detail*/
-.dog-detail{
-
-}
 .dog-detail .title h2{
 	color: #ffac0e;
 	text-transform: uppercase;
@@ -737,8 +734,17 @@ img.aligncenter {
 	width:100%;
 	height: auto;
 }
-
-
+/*General Page*/
+.general-content.page h2{
+	color:#ffac0e;
+}
+.general-content.page .featured-image img{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.general-content.page .content{
+	margin-bottom: 50px;
+}
 /*Media queries*/
 
 /* Large Devices, Wide Screens */
