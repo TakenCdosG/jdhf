@@ -32,7 +32,7 @@
 								<div class="meta">
 									Age: <?php echo the_field('age') ?>
 								</div>
-								<div class="button"> <?php echo the_field('application_button') ?> </div>											
+								<div class="button"> <?php echo do_shortcode(get_sub_field('application_button')) ?> </div>											
 							</div>
 							<div class="content">
 								<?php the_content(); ?>
