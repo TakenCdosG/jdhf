@@ -18,6 +18,8 @@
 				get_template_part( 'templates/parts/bio-column-right' );
 			elseif( get_row_layout() == 'bio_column_left' ):
 				get_template_part( 'templates/parts/bio-column-left' );
+			elseif( get_row_layout() == 'button_call_to_action' ):
+				get_template_part( 'templates/parts/button_cta' );
 			endif;
 		endwhile;
 	else :
