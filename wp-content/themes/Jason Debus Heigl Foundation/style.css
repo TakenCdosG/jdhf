@@ -31,9 +31,6 @@ h2{
 h3{
 	font-size: 30px !important;
 }
-a, a:hover{
-	text-decoration: none !important;
-}
 /*header*/
 header{
 	position: absolute;
@@ -41,6 +38,7 @@ header{
 	z-index: 10;
 	width: 100%;
 }
+
 .navigation-container{
 	margin-top: 20px;
 }
@@ -87,6 +85,7 @@ header{
 }
 .nav li a:hover, .menu li a:hover{
 	color: #ffac0e !important;
+	text-decoration: none;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
 	background: transparent !important;
@@ -180,7 +179,7 @@ li.widget{
 	transform: translateY(-50%);
 }
 .header .heading{
-	color:#fff;
+	color:#FFFFFF;
 	width:415px;
 	font-size: 58px !important;
 	margin-bottom: 10px !important;
@@ -191,6 +190,54 @@ li.widget{
 .no-header{
 	height:210px;
 	background-color: #333;
+}
+/*Header_Our_Work*/
+.header-ow{
+	min-height: 645px;
+	background-size: cover !important:
+	background-position: center  !important;
+	position: relative;
+	display: block;
+}
+.header-ow .content{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+.header-ow .heading{
+	color:#FFFFFF;
+	width:415px;
+	font-size: 58px !important;
+	margin-top: 227px !important;
+	margin-left: 42px !important;
+}
+/*Bio_Columns*/
+.bio-container{
+	display: flex;
+	overflow-x: hidden;
+}
+.bio-text{
+	line-height: 5px;
+}
+.left-half-r{
+	flex: 1;
+	width: 50%;
+}
+.right-half-r{
+	flex: 1;
+	padding-top: 55px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.left-half-l{
+	flex: 1;
+	padding-top: 55px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.right-half-l{
+	flex: 1;
+	width: 50%;
 }
 
 /*statistics*/
@@ -438,6 +485,7 @@ li.widget{
 	border: 1px solid #ffac0e;
 	display: inline-block;
 	background: #fff;
+	text-decoration: none;
 	color:#302c2d;font-weight: 700;
     font-size: 18px;
 }
@@ -484,7 +532,9 @@ li.widget{
 	padding:5px 20px 0 0;
 	border-top: 1px solid #e4e4e4;
 }
-
+.news-listing .post .readmore a:hover{
+	text-decoration: none;
+}
 
 /*CallOut*/
 .callout{
@@ -541,29 +591,29 @@ li.widget{
 	font-family: "calluna",serif;
 }
 /*WP aling images*/
-img.alignright { 
-	float: right; 
-	margin: 0 0 15px 15px; 
+img.alignright {
+	float: right;
+	margin: 0 0 15px 15px;
 }
-img.alignleft { 
-	float: left; 
-	margin: 0 15px 15px 0; 
+img.alignleft {
+	float: left;
+	margin: 0 15px 15px 0;
 }
-img.aligncenter { 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto; 
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
-.alignright { 
-	float: right; 
+.alignright {
+	float: right;
 }
-.alignleft { 
-	float: left; 
+.alignleft {
+	float: left;
 }
-.aligncenter { 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto; 
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 /*General Content*/
 .general-content{
@@ -600,42 +650,8 @@ img.aligncenter {
 .founders .content{
 	margin-bottom: 30px;
 }
-/*Dog List*/
-.dog-list{
-	background: #c3cac8;
-}
-.dog-list .content{
-	padding: 0 50px;
-}
-.dog-list .dog{
-	background:#fff;
-	margin-bottom: 35px;
-}
-.dog-list .dog .meta-holder{
-	padding:25px;
-	font-size: 17px;
-}
-.dog-list .dog .image{
-	height: 320px;
-	background-size: cover !important;
-	background-position: center;
-	max-width: 100%;
-}
-.dog-list .dog .title{
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 24px;
-}
-.dog-list .dog .meta{
-	margin:5px 0;
-}
-.dog-list .dog .readmore{
-	text-transform: uppercase;
-	margin: 35px 0 0;
-}
-.dog-list .dog .readmore a{
-	color: #68c4db;
-}
+
+
 /*Media queries*/
 
 /* Large Devices, Wide Screens */
@@ -722,10 +738,6 @@ img.aligncenter {
 	.news-listing .post .title{
 		font-size: 32px;
 	}
-	/*Dogs list*/
-	.dog-list .content{
-		padding: 0 0;
-	}
 
 }
 
@@ -748,13 +760,6 @@ img.aligncenter {
 	}
 	.programs .item .text p{
 		min-height: 140px;
-	}
-	/*DOgs List*/
-	.dog-list .dog .image{
-		height: 230px;
-	}
-	.dog-list .dog .meta-holder{
-		min-height: 254px;
 	}
 }
 
@@ -793,10 +798,6 @@ img.aligncenter {
 	}
 	.callout p{
 		font-size: 45px;
-	}
-	/*DOgs List*/
-	.dog-list .dog .image{
-		height: 350px;
 	}
 }
 
