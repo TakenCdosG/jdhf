@@ -743,7 +743,7 @@ img.aligncenter {
 	margin-bottom: 30px;
 }
 .general-content.page .content{
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 }
 /*Media queries*/
 
@@ -961,5 +961,9 @@ img.aligncenter {
 	/*footer*/
 	.pre-footer .container{
 		width:800px;
+	}
+	/*General Page*/
+	.general-content.page .container{
+		width:880px;
 	}
 }
