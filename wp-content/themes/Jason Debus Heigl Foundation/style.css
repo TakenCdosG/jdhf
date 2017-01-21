@@ -737,6 +737,7 @@ img.aligncenter {
 /*General Page*/
 .general-content.page h2{
 	color:#ffac0e;
+	text-transform: uppercase;
 }
 .general-content.page .featured-image img{
 	width: 100%;
