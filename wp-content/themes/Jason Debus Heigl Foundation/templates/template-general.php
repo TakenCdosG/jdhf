@@ -38,6 +38,10 @@
 	        	get_template_part( 'templates/parts/founders' );       	
 	        elseif( get_row_layout() == 'dogs_list' ): 
 	        	get_template_part( 'templates/parts/load_dogs' );
+			elseif( get_row_layout() == 'bio_column_right' ):
+				get_template_part( 'templates/parts/bio-column-right' );
+			elseif( get_row_layout() == 'bio_column_left' ):
+				get_template_part( 'templates/parts/bio-column-left' );
 	        endif;
 	    endwhile;
 	else :
