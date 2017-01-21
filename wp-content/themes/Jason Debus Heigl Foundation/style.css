@@ -683,6 +683,62 @@ img.aligncenter {
 .dog-list .dog .readmore a{
 	color: #68c4db;
 }
+/*Dog Detail*/
+.dog-detail{
+
+}
+.dog-detail .title h2{
+	color: #ffac0e;
+	text-transform: uppercase;
+}
+.dog-detail .video{ 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	margin: 50px 0;
+}
+.dog-detail .video iframe, .dog-detail .video object, .dog-detail .video embed { 
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+.dog-detail .featured-image img{
+	width:100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+.dog-detail .meta-holder{
+	margin-bottom: 35px;
+	position: relative;
+}
+.dog-detail .meta-holder .meta{
+	font-size: 26px;
+	font-weight: 600;
+}
+.dog-detail .meta-holder .button{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.dog-detail .content{
+	font-size: 24px;
+}
+.dog-detail .content p{
+	margin-bottom: 28px !important;
+}
+.dog-detail .gallery .image{
+	margin:10px auto;
+}
+.dog-detail .gallery img{
+	width:100%;
+	height: auto;
+}
+
+
 /*Media queries*/
 
 /* Large Devices, Wide Screens */
@@ -844,6 +900,10 @@ img.aligncenter {
 	/*DOgs List*/
 	.dog-list .dog .image{
 		height: 350px;
+	}
+	/*Dog Detail*/
+	.dog-detail .meta-holder .button{
+		position: relative;
 	}
 }
 

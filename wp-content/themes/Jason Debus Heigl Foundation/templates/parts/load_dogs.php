@@ -26,8 +26,7 @@ if( get_sub_field('global') == 1):
 											?>
 												<div class="col-sm-4"> 
 													<div class="dog">
-														<div class="image" style="background-image: url( <?php echo the_post_thumbnail_url( 'medium' ) ?> )"></div>
-
+														<div class="image" style="background-image: url( <?php echo the_field('list_image'); ?> )"></div>
 														<div class="meta-holder">
 															<div class="title">
 																<?php echo get_the_title() ?> 
@@ -90,8 +89,7 @@ else :
 							?>
 								<div class="col-sm-4"> 
 									<div class="dog">
-										<div class="image" style="background-image: url( <?php echo the_post_thumbnail_url( 'medium' ) ?> )"></div>
-
+										<div class="image" style="background-image: url( <?php echo the_field('list_image'); ?> )"></div>
 										<div class="meta-holder">
 											<div class="title">
 												<?php echo get_the_title() ?> 

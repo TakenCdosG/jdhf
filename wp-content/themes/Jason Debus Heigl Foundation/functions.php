@@ -15,6 +15,10 @@ function add_theme_scripts() {
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', null,'all');
 	/*Boostrap css*/
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/includes/css/bootstrap.min.css', null,'all');
+    /*FancyBox Css*/
+    wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() .'/includes/js/libraries/fancybox/jquery.fancybox.css');
+    /*FancyBox Js*/
+    wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() .'/includes/js/libraries/fancybox/jquery.fancybox.js');
 	/*Boostrap js*/
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/includes/js/bootstrap.min.js', array ( 'jquery' ), true);
 	wp_enqueue_script( 'global', get_template_directory_uri() . '/includes/js/global.js', array ( 'jquery' ), true);
@@ -166,3 +170,19 @@ function cptui_register_my_cpts_dog() {
 }
 
 add_action( 'init', 'cptui_register_my_cpts_dog' );
+
+/*Custom Thumb Size*/
+
+function custom_image_sizes() {
+  add_theme_support('post-thumbnails');
+  add_image_size('medium_custom', 300, 225, true);
+  add_image_size('medium_custom', 300, 225, true);
+}
+add_action('after_setup_theme', 'custom_image_sizes');
+function add_custom_sizes( $imageSizes ) {
+  $my_sizes = array(
+    'medium_custom' => 'Medium-small'
+  );
+  return array_merge( $imageSizes, $my_sizes );
+}
+add_filter( 'image_size_names_choose', 'add_custom_sizes' );
