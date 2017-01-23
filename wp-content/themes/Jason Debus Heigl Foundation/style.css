@@ -174,7 +174,7 @@ li.widget{
 	position: relative;
 	display: block;
 }
-.header .content{
+	.header .content{
 	position: absolute;
 	top:50%;
 	transform: translateY(-50%);
@@ -192,29 +192,9 @@ li.widget{
 	height:210px;
 	background-color: #333;
 }
-/*Header_Our_Work*/
-.header-ow{
-	min-height: 645px;
-	background-size: cover !important:
-	background-position: center  !important;
-	position: relative;
-	display: block;
-}
-.header-ow .content{
-	position: absolute;
-	top:50%;
-	transform: translateY(-50%);
-}
-.header-ow .heading{
-	color:#FFFFFF;
-	width:415px;
-	font-size: 58px !important;
-	margin-top: 227px !important;
-	margin-left: 42px !important;
-}
 /*Bio_Columns*/
 .bio-container{
-	display: flex;
+	max-height: 100%;
 	overflow-x: hidden;
 }
 .bio-text{
@@ -222,24 +202,39 @@ li.widget{
 }
 .left-half-r{
 	flex: 1;
-	width: 50%;
+}
+.left-half-r img{
+	/*max-width:100%;
+	height: auto;*/
+	margin-left: -15px;
+	background-size: cover;
 }
 .right-half-r{
 	flex: 1;
 	padding-top: 55px;
 	padding-left: 50px;
 	padding-right: 50px;
+	padding-bottom: 30px;
+	max-width:100%;
+	height: auto;
 }
 .left-half-l{
 	flex: 1;
 	padding-top: 55px;
 	padding-left: 50px;
 	padding-right: 50px;
+	padding-bottom: 30px;
+	margin-right: -15px;
+	margin-left: -15px;
 }
 .right-half-l{
 	flex: 1;
-	width: 50%;
 }
+.right-half-l img{
+	height: auto;
+	margin-left: -15px;
+}
+
 /*statistics*/
 .statistics{
 	background: #fff;
@@ -688,20 +683,20 @@ img.aligncenter {
 	color: #ffac0e;
 	text-transform: uppercase;
 }
-.dog-detail .video{ 
-	position: relative; 
-	padding-bottom: 56.25%; 
-	height: 0; 
-	overflow: hidden; 
-	max-width: 100%; 
+.dog-detail .video{
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
 	margin: 50px 0;
 }
-.dog-detail .video iframe, .dog-detail .video object, .dog-detail .video embed { 
+.dog-detail .video iframe, .dog-detail .video object, .dog-detail .video embed {
 	position: absolute;
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .dog-detail .featured-image img{
 	width:100%;
@@ -919,6 +914,24 @@ img.aligncenter {
 	.dog-detail .meta-holder .button{
 		position: relative;
 	}
+	/* Bio Columns*/
+		/* Bio Colums */
+		.left-half-r{
+			visibility: hidden;
+			clear: both;
+			float: left;
+			margin: 10px auto 5px 20px;
+			width: 0%;
+			display: none:
+		}
+		.right-half-l{
+			visibility: hidden;
+			clear: both;
+			float: left;
+			margin: 10px auto 5px 20px;
+			width: 28%;
+			display: none;
+		}
 }
 
 /* Extra Small Devices, Phones */
