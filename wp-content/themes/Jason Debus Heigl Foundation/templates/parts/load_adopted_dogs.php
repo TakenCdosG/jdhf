@@ -1,7 +1,7 @@
 <?php
 if( get_sub_field('global') == 1):
     while ( have_rows('page_content', get_id_by_slug('global-modules')) ) : the_row();
-        if( get_row_layout() == 'dogs_list' ): 
+        if( get_row_layout() == 'adopted_dogs_list' ): 
         	?>
 				<div class="dog-list">
 					<div class="container">
