@@ -19,7 +19,7 @@ if( get_sub_field('global') == 1):
 											    array(
 											    'taxonomy' => 'dog_status',
 											    'field' => 'slug',
-											    'terms' => 'available'
+											    'terms' => 'adopted'
 											    )
 											)
 										);

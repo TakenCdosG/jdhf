@@ -746,6 +746,13 @@ img.aligncenter {
 .general-content.page .content{
 	margin-bottom: 15px;
 }
+/*Blog*/
+
+.grid-sizer, .grid-item {
+    width: 50%;
+    float: left;
+}
+
 /*Media queries*/
 
 /* Large Devices, Wide Screens */

@@ -34,7 +34,9 @@
 	        elseif( get_row_layout() == 'founders' ): 
 	        	get_template_part( 'templates/parts/founders' );       	
 	        elseif( get_row_layout() == 'dogs_list' ): 
-	        	get_template_part( 'templates/parts/load_dogs' );
+	        	get_template_part( 'templates/parts/load_dogs' );       	
+	        elseif( get_row_layout() == 'adopted_dogs_list' ): 
+	        	get_template_part( 'templates/parts/load_adopted_dogs' );
 			elseif( get_row_layout() == 'bio_column_right' ):
 				get_template_part( 'templates/parts/bio-column-right' );
 			elseif( get_row_layout() == 'bio_column_left' ):
@@ -45,14 +47,14 @@
 	    endwhile;
 	else :
 	    // no layouts found
+		/*if (have_posts()) :
+			while (have_posts()) :
+				the_post();
+				the_content();
+			endwhile;
+		endif;*/	    
 	endif;
 
-	/*if (have_posts()) :
-		while (have_posts()) :
-			the_post();
-			the_author_posts_link();
-			the_content();
-		endwhile;
-	endif;*/
+
 	?>
 <?php get_footer(); ?>

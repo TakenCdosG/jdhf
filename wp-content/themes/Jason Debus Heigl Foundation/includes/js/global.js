@@ -9,7 +9,7 @@
 		else{
 			$( "<div class='no-header'></div>" ).insertAfter( $( ".main-header" ) );
 		}
-		
+		/*Gallery*/
 		$("a.group").fancybox({
 			'transitionIn'	:	'elastic',
 			'transitionOut'	:	'elastic',
@@ -17,6 +17,16 @@
 			'speedOut'		:	200, 
 			'overlayShow'	:	false
 		});
+		/*Masonry*/
+		var $grid = $('.grid');
+		$grid.masonry({
+	          // options
+	          itemSelector: '.grid-item',
+	          // use element for option
+	          columnWidth: '.grid-sizer',
+	          percentPosition: true
+	         /* stamp: '.grid-item:nth-child(2), .grid-item:nth-child(3)'*/
+	      });
 		
 	});
 

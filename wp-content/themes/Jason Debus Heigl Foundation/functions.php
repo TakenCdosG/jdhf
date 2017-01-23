@@ -19,6 +19,8 @@ function add_theme_scripts() {
     wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() .'/includes/js/libraries/fancybox/jquery.fancybox.css');
     /*FancyBox Js*/
     wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() .'/includes/js/libraries/fancybox/jquery.fancybox.js');
+    /*Masonry js*/
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/includes/js/libraries/masonry/masonry.pkgd.min.js', array ( 'jquery' ), true);
 	/*Boostrap js*/
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/includes/js/bootstrap.min.js', array ( 'jquery' ), true);
 	wp_enqueue_script( 'global', get_template_directory_uri() . '/includes/js/global.js', array ( 'jquery' ), true);
@@ -170,6 +172,41 @@ function cptui_register_my_cpts_dog() {
 }
 
 add_action( 'init', 'cptui_register_my_cpts_dog' );
+
+/*Custom Taxonomies*/
+function cptui_register_my_taxes_dog_status() {
+
+    /**
+     * Taxonomy: Dog Status.
+     */
+
+    $labels = array(
+        "name" => __( 'Dog Status', '' ),
+        "singular_name" => __( 'Dog Status', '' ),
+    );
+
+    $args = array(
+        "label" => __( 'Dog Status', '' ),
+        "labels" => $labels,
+        "public" => true,
+        "hierarchical" => true,
+        "label" => "Dog Status",
+        "show_ui" => true,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "query_var" => true,
+        "rewrite" => array( 'slug' => 'dog_status', 'with_front' => false, ),
+        "show_admin_column" => false,
+        "show_in_rest" => false,
+        "rest_base" => "",
+        "show_in_quick_edit" => false,
+    );
+    register_taxonomy( "dog_status", array( "dog" ), $args );
+}
+
+add_action( 'init', 'cptui_register_my_taxes_dog_status' );
+
+
 
 /*Custom Thumb Size*/
 
