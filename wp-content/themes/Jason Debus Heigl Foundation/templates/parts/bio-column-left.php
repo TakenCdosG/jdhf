@@ -3,18 +3,18 @@ if( get_sub_field('global') == 1):
 	while ( have_rows('page_content', get_id_by_slug('global-modules')) ) : the_row();
 		if( get_row_layout() == 'bio_column_right' ):
 			?>
-				<section class="bio-container">
-					<div class="left-half-l" style="background-color:<?php the_sub_field('bio_background_color')?>">
-						<article class="bio-text">
-							<p><?php the_sub_field('bio_text')?></p>
-						</article>
-					</div>
-					<div class="right-half-l" >
-						<article>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="left-half-l" style="background-color:<?php the_sub_field('bio_background_color')?>">
+								<p><?php the_sub_field('bio_text')?></p>
+							</div>
+						</div>
+						<div class="col-sm-6 right-half-l" style="background-color:<?php the_sub_field('bio_background_color')?>">
 							<img src="<?php the_sub_field('bio_image') ?>">
-						</article>
+						</div>
 					</div>
-				</section>
+				</div>
 			<?php
 		endif;
 	endwhile;
