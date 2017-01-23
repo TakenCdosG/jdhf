@@ -37,6 +37,7 @@
 							<div class="content">
 								<?php the_content(); ?>
 							</div>
+							<?php if(!empty(get_field('video_url'))): ?>
 							<div class="video">
 								<?php 
 									$embed = get_field('video_url');
@@ -44,6 +45,7 @@
 									echo '<iframe width="100%" src="'.$str.'" frameborder="0" allowfullscreen></iframe>';
 								?>
 							</div>
+							<?php endif; ?>
 							<div class="gallery">
 								<?php 
 
