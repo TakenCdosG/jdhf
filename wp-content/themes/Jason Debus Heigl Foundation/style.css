@@ -827,7 +827,7 @@ img.aligncenter {
 	position: absolute;
 	bottom: 20px;
 }
-.blog-header input[type=submit]{
+.blog-header input[type=submit], .blog-toolbar input[type=submit], .mail-chimp-subscribe input[type=submit]{
 	background: #333;
 	color:#fff;
 	width: 45px;
@@ -835,7 +835,7 @@ img.aligncenter {
 	padding: 0 10px;
 	width: 84px;
 }
-.blog-header .search input[type=submit]{
+.blog-header .search input[type=submit], .blog-toolbar .search input[type=submit]{
 	background: #333;
 	font-family: FontAwesome;
 	color:#fff;
@@ -843,7 +843,7 @@ img.aligncenter {
 	font-size: 25px;
 	padding: 0 10px;
 }
-.blog-header input, .blog-header select{
+.blog-header input, .blog-header select, .blog-toolbar input, .blog-toolbar select, .mail-chimp-subscribe input, .mail-chimp-subscribe select{
 	height:35px;
 	float:left;
 	border: 0;
@@ -853,10 +853,10 @@ img.aligncenter {
 	margin-bottom: 15px;
 	color: #333;
 }
-.blog-header input{
+.blog-header input, .blog-toolbar input, .mail-chimp-subscribe input{
 	width:251px;
 }
-.blog-header .search, .blog-header .categories, .blog-header #mc_embed_signup{
+.blog-header .search, .blog-header .categories, .blog-header #mc_embed_signup, .mail-chimp-subscribe #mc_embed_signup{
 	clear: both;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -898,6 +898,113 @@ img.aligncenter {
 }
 .pagination .page-numbers{
 	margin: 0 10px;
+}
+/*Single Blog*/
+.single-blog{
+	padding: 20px 0 55px;
+	background: #fff;
+}
+.single-blog .featured-image{
+	min-height: 583px;
+	margin-bottom: 15px;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.single-blog .content{
+	font-size: 21px;
+	margin-bottom: 25px;
+}
+.single-blog .date{
+	font-family: "calluna", serif; 
+	font-weight: bold;
+	color: #616161;	
+	font-size: 21px;
+}
+.single-blog .title{
+	color: #454545;
+}
+.grey-bg{
+	background: #b1aea9;
+	color: #fff;
+}
+.blog-toolbar{
+	background: #ef9f08;
+	padding-top: 15px;
+	display: block;
+}
+.blog-toolbar .search{
+	margin-right: 35px;
+	float: left;
+}
+.blog-toolbar #categories{
+	float: left;
+}
+.blog-toolbar .input-container{
+	width:662px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.blog-toolbar input, .blog-toolbar select{
+	border:1px solid #757575;
+}
+.blog-toolbar input{
+	border-right: 0;
+}
+.blog-toolbar input[type=submit]{
+	border-color: #333;
+	border-left: 0;
+}
+.single-blog .cat-tags-container *{
+	float:left;
+	font-size: 16px;
+	color: #3d3d3d;
+}
+.single-blog .cat-tags-container a:after{
+	content: ",";
+	margin-right: 3px;
+}
+.single-blog .cat-tags-container a:last-child:after{
+	content: "";
+}
+.single-blog .cat-tags-container .cat-tags{
+	clear: both;
+	margin-right: 5px;
+	font-weight: 800;
+	color: #ef9f08;
+}
+.mail-chimp-subscribe{
+	background: #f7f7f7;
+	width: 622px;
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center;
+	padding: 20px 15px 27px;
+	margin-top: 57px;
+}
+.mail-chimp-subscribe input[type=email]{
+	border:1px solid #757575;
+	border-right: 0;
+	height:41px;
+}
+.mail-chimp-subscribe input[type=submit]{
+	border:1px solid #333;
+	border-left: 0;
+	height:41px;
+}
+.mail-chimp-subscribe #mc_embed_signup{
+	width:297px;
+	margin: 0 auto;
+}
+.mail-chimp-subscribe h3{
+	color:#64bed1;
+	font-size: 27px;
+	margin:0 !important;
+}
+.mail-chimp-subscribe h4{
+	font-size: 19px;
+	margin:0 !important;
+	font-weight: 700;
+	margin: 10px 0 20px !important;
 }
 
 /*Media queries*/
@@ -1114,11 +1221,27 @@ img.aligncenter {
 		float:left;
 		width:270px;
 	}
-	.blog-header input{
+	.blog-toolbar .input-container{
+		float: none;
+		width: 270px;
+	}
+	.blog-toolbar #categories{
+		float: none;
+	}
+	.blog-header input, .blog-toolbar input{
 		width:225px;
 	}
 	.blog-header .mc-field-group input{
 		width:186px;
+	}
+	.mail-chimp-subscribe input{
+		width:156px;
+	}
+	.blog-toolbar .search{
+		margin-right: 0;
+	}
+	.mail-chimp-subscribe #mc_embed_signup{
+		width:245px;
 	}
 }
 
@@ -1185,5 +1308,8 @@ img.aligncenter {
 	/*General Page*/
 	.general-content.page .container{
 		width:880px;
+	}
+	.single-blog .container{
+		width: 900px;
 	}
 }
