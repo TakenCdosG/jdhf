@@ -1,4 +1,4 @@
-<div class="general-quote">
+<div class="button-cta">
 	<div class="container">
 		<div class="row">
 			<div class="content col-lg-12">
