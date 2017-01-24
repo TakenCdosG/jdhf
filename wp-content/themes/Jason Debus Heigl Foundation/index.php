@@ -7,42 +7,53 @@
 ?>
 <?php get_header(); ?>
 	<?php
+	function renderPart($part){
+		if( get_sub_field('global') == 1):
+			while ( have_rows('page_content', get_id_by_slug('global-modules')) ) : the_row();
+				if( get_row_layout() == $part ):
+					get_template_part( 'templates/parts/'.$part );
+				endif;
+			endwhile;
+		else :
+			get_template_part( 'templates/parts/'.$part );
+		endif;
+	}
 	// check if the flexible content field has rows of data
 	if( have_rows('page_content') ):
 	     // loop through the rows of data
 	    while ( have_rows('page_content') ) : the_row();
 	        if( get_row_layout() == 'header' ): 
-				get_template_part( 'templates/parts/header' );        	
+				renderPart('header');				        	
 	        elseif( get_row_layout() == 'statistics' ): 
-	        	get_template_part( 'templates/parts/statistics' );       	
+	        	renderPart('statistics');       	
 	        elseif( get_row_layout() == 'donation_w_background_image' ): 
-	        	get_template_part( 'templates/parts/donation_w_bg' );       	
+	        	renderPart('donation_w_background_image');       	
 	        elseif( get_row_layout() == 'general_quote' ): 
-	        	get_template_part( 'templates/parts/general_quote' );       	
+	        	renderPart( 'general_quote' );       	
 	        elseif( get_row_layout() == 'programs' ): 
-	        	get_template_part( 'templates/parts/programs' );       	
+	        	renderPart( 'programs' );       	
 	        elseif( get_row_layout() == 'news_listing' ): 
-	        	get_template_part( 'templates/parts/load_news' );       	
+	        	renderPart( 'news_listing' );       	
 	        elseif( get_row_layout() == 'button_call_to_action' ): 
-	        	get_template_part( 'templates/parts/button_cta' );       	
+	        	renderPart( 'button_call_to_action' );       	
 	        elseif( get_row_layout() == 'general_content' ): 
-	        	get_template_part( 'templates/parts/general_content' );
+	        	renderPart( 'general_content' );
 	        elseif( get_row_layout() == 'callout' ):
-				get_template_part( 'templates/parts/callout');       	
+				renderPart( 'callout');       	
 	        elseif( get_row_layout() == 'two_column_content' ): 
-	        	get_template_part( 'templates/parts/two_column_content' );       	
+	        	renderPart( 'two_column_content' );       	
 	        elseif( get_row_layout() == 'founders' ): 
-	        	get_template_part( 'templates/parts/founders' );       	
+	        	renderPart( 'founders' );       	
 	        elseif( get_row_layout() == 'dogs_list' ): 
-	        	get_template_part( 'templates/parts/load_dogs' );       	
+	        	renderPart( 'dogs_list' );       	
 	        elseif( get_row_layout() == 'adopted_dogs_list' ): 
-	        	get_template_part( 'templates/parts/load_adopted_dogs' );
+	        	renderPart( 'adopted_dogs_list' );
 			elseif( get_row_layout() == 'bio_column_right' ):
-				get_template_part( 'templates/parts/bio-column-right' );
+				renderPart( 'bio_column_right' );
 			elseif( get_row_layout() == 'bio_column_left' ):
-				get_template_part( 'templates/parts/bio-column-left' );       	
+				renderPart( 'bio_column_left' );       	
 	        elseif( get_row_layout() == 'general_page_content' ): 
-	        	get_template_part( 'templates/parts/general_page_content' );
+	        	renderPart( 'general_page_content' );
 	        endif;
 	    endwhile;
 	else :
