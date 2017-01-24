@@ -206,8 +206,8 @@ li.widget{
 	padding: 54px 45px;
 	font-size:18px;
 }
-.bio-container .content{
-	margin-bottom: 
+.bio-container .content p{
+	margin-bottom: 25px;
 }
 .left-half-r{
 	width: 50%;
