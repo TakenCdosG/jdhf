@@ -57,15 +57,24 @@
 	        endif;
 	    endwhile;
 	else :
-	    // no layouts found
-		/*if (have_posts()) :
-			while (have_posts()) :
-				the_post();
-				the_content();
-			endwhile;
-		endif;*/	    
-	endif;
-
-
-	?>
+		?>
+		<div class="general-content page">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<?php
+						    // no layouts found
+							if (have_posts()) :
+								while (have_posts()) :
+									the_post();
+									echo "<h2>".get_the_title()."</h2>";
+									the_content();
+								endwhile;
+							endif;	    
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>	
 <?php get_footer(); ?>
