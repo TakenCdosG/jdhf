@@ -223,9 +223,3 @@ function add_custom_sizes( $imageSizes ) {
   return array_merge( $imageSizes, $my_sizes );
 }
 add_filter( 'image_size_names_choose', 'add_custom_sizes' );
-
-/*Remove Editor*/
-function remove_editor() {
-    remove_post_type_support( 'page', 'editor' );
-}
-add_action('init', 'remove_editor');
