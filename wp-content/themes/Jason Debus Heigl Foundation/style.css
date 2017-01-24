@@ -911,8 +911,11 @@ img.aligncenter {
 	background-position: center !important;
 }
 .single-blog .content{
-	font-size: 21px;
 	margin-bottom: 25px;
+}
+.single-blog .content p{
+	font-size: 21px;
+	margin-bottom: 23px;
 }
 .single-blog .date{
 	font-family: "calluna", serif; 
