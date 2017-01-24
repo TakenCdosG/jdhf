@@ -58,7 +58,7 @@
 							the_post();
 							echo "<div class='date'>".get_the_date()."</div>";
 							echo "<div class='title'><h2>".get_the_title()."</h2></div>";
-							echo "<div class='featured-image' style='background-image: url( ". get_the_post_thumbnail_url()." )'></div>";
+							echo "<div class='featured-image' style='background-image: url( ". get_the_post_thumbnail_url()." )'>".do_shortcode('[Sassy_Social_Share type="floating"]') ."</div>";
 							echo "<div class='content'>".wpautop(get_the_content())."</div>";
 							$categories = get_categories( array(
 							    'orderby' => 'name',

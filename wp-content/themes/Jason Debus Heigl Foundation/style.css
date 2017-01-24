@@ -909,6 +909,7 @@ img.aligncenter {
 	margin-bottom: 15px;
 	background-size: cover !important;
 	background-position: center !important;
+	position: relative;
 }
 .single-blog .content{
 	margin-bottom: 25px;
@@ -1008,6 +1009,14 @@ img.aligncenter {
 	margin:0 !important;
 	font-weight: 700;
 	margin: 10px 0 20px !important;
+}
+.single-blog .featured-image .heateor_sss_sharing_container{
+	position: absolute !important;
+	top: -11px !important;
+	left: -50px !important; 
+}
+.single-blog .heateorSssSharingArrow{
+	display: none !important;
 }
 
 /*Media queries*/
@@ -1146,6 +1155,15 @@ img.aligncenter {
 		margin: 50px 0 10px;
 		bottom: 0; 
 	}
+	/*Blog detail*/
+	.single-blog .heateor_sss_sharing_container{
+		width:44px !important;
+	}
+	.single-blog .featured-image .heateor_sss_sharing_container{
+		position: absolute !important;
+		top: -11px !important;
+		left: -11px !important; 
+	}
 }
 
 /* Small Devices, Tablets */
@@ -1245,6 +1263,10 @@ img.aligncenter {
 	}
 	.mail-chimp-subscribe #mc_embed_signup{
 		width:245px;
+	}
+	/*Blog detail*/
+	.single-blog .featured-image{
+		min-height: 333px;
 	}
 }
 
