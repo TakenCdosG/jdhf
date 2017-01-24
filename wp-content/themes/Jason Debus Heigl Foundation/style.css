@@ -879,6 +879,23 @@ img.aligncenter {
     display: block;
     width: 325px;
 }
+.pagination{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+}
+.pagination a{
+	color:#000;
+}
+.pagination .current{
+	font-weight: 700;
+}
+.pagination .current{
+	border-bottom: 1px solid #a3a3a3;
+}
+.pagination .page-numbers{
+	margin: 0 10px;
+}
 
 /*Media queries*/
 
