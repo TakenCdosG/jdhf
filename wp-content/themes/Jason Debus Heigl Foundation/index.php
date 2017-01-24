@@ -22,38 +22,40 @@
 	if( have_rows('page_content') ):
 	     // loop through the rows of data
 	    while ( have_rows('page_content') ) : the_row();
-	        if( get_row_layout() == 'header' ): 
-				renderPart('header');				        	
-	        elseif( get_row_layout() == 'statistics' ): 
-	        	renderPart('statistics');       	
-	        elseif( get_row_layout() == 'donation_w_background_image' ): 
-	        	renderPart('donation_w_background_image');       	
-	        elseif( get_row_layout() == 'general_quote' ): 
-	        	renderPart( 'general_quote' );       	
-	        elseif( get_row_layout() == 'programs' ): 
-	        	renderPart( 'programs' );       	
-	        elseif( get_row_layout() == 'news_listing' ): 
-	        	renderPart( 'news_listing' );       	
-	        elseif( get_row_layout() == 'button_call_to_action' ): 
-	        	renderPart( 'button_call_to_action' );       	
-	        elseif( get_row_layout() == 'general_content' ): 
+	        if( get_row_layout() == 'header' ):
+				renderPart('header');
+	        elseif( get_row_layout() == 'statistics' ):
+	        	renderPart('statistics');
+	        elseif( get_row_layout() == 'donation_w_background_image' ):
+	        	renderPart('donation_w_background_image');
+	        elseif( get_row_layout() == 'general_quote' ):
+	        	renderPart( 'general_quote' );
+	        elseif( get_row_layout() == 'programs' ):
+	        	renderPart( 'programs' );
+	        elseif( get_row_layout() == 'news_listing' ):
+	        	renderPart( 'news_listing' );
+	        elseif( get_row_layout() == 'button_call_to_action' ):
+	        	renderPart( 'button_call_to_action' );
+	        elseif( get_row_layout() == 'general_content' ):
 	        	renderPart( 'general_content' );
 	        elseif( get_row_layout() == 'callout' ):
-				renderPart( 'callout');       	
-	        elseif( get_row_layout() == 'two_column_content' ): 
-	        	renderPart( 'two_column_content' );       	
-	        elseif( get_row_layout() == 'founders' ): 
-	        	renderPart( 'founders' );       	
-	        elseif( get_row_layout() == 'dogs_list' ): 
-	        	renderPart( 'dogs_list' );       	
-	        elseif( get_row_layout() == 'adopted_dogs_list' ): 
+				renderPart( 'callout');
+	        elseif( get_row_layout() == 'two_column_content' ):
+	        	renderPart( 'two_column_content' );
+	        elseif( get_row_layout() == 'founders' ):
+	        	renderPart( 'founders' );
+	        elseif( get_row_layout() == 'dogs_list' ):
+	        	renderPart( 'dogs_list' );
+	        elseif( get_row_layout() == 'adopted_dogs_list' ):
 	        	renderPart( 'adopted_dogs_list' );
 			elseif( get_row_layout() == 'bio_column_right' ):
 				renderPart( 'bio_column_right' );
 			elseif( get_row_layout() == 'bio_column_left' ):
-				renderPart( 'bio_column_left' );       	
-	        elseif( get_row_layout() == 'general_page_content' ): 
+				renderPart( 'bio_column_left' );
+	        elseif( get_row_layout() == 'general_page_content' ):
 	        	renderPart( 'general_page_content' );
+	        elseif( get_row_layout() == 'form_panel' ):
+	        	renderPart( 'form_panel' );
 	        endif;
 	    endwhile;
 	else :
@@ -70,11 +72,11 @@
 									echo "<h2>".get_the_title()."</h2>";
 									the_content();
 								endwhile;
-							endif;	    
+							endif;
 						?>
 					</div>
 				</div>
 			</div>
 		</div>
-	<?php endif; ?>	
+	<?php endif; ?>
 <?php get_footer(); ?>
