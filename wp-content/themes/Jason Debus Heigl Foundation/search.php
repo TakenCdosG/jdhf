@@ -7,38 +7,80 @@
 ?>
 <?php get_header(); ?>
 
-<?php global $wp_query;?>
-<div class="wapper">
-  <div class="contentarea clearfix">
-    <div class="content">
-      <h1 class="search-title"> <?php echo $wp_query->found_posts; ?>
-        <?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>" </h1>
 
-        <?php if ( have_posts() ) : ?>
-
-            <ul>
-
-            <?php while ( have_posts() ) : the_post(); ?>
-
-               <li>
-                 <h3><a href="<?php echo get_permalink(); ?>">
-                   <?php the_title();  ?>
-                 </a></h3>
-                 <?php  the_post_thumbnail('medium') ?>
-                 <?php echo substr(get_the_excerpt(), 0,200); ?>
-                 <div class="h-readmore"> <a href="<?php the_permalink(); ?>">Read More</a></div>
-               </li>
-
-            <?php endwhile; ?>
-
-            </ul>
-
-           <?php paginate_links(); ?>
-
-        <?php endif; ?>
-
+<div class="white-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>SEARCH RESULTS</h1>
+      </div>
     </div>
-  </div>
-</div>
+    <div class="row">
+      <div class="blog-list">
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <?php
+            
+            $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+            $args = Array(
+              'post_type' => 'post',
+              's' => $s,
+              'exact' => 0, 
+              'posts_per_page' => '7',
+              'paged' => $paged
+            );
+            // The Query
+            $the_query = new WP_Query( $args );
 
+            // The Loop
+            if ( $the_query->have_posts() ) {
+              while ( $the_query->have_posts() ) {
+                $the_query->the_post();
+              ?>
+                <div class="grid-item"> 
+                  <div class="post">
+                    <div class="date">
+                      <?php echo get_the_date() ?> 
+                    </div>
+                    <div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )">
+                    </div>
+                    <div class="title">
+                      <?php echo get_the_title() ?> 
+                    </div>
+                    <div class="content">
+                      <?php echo get_the_excerpt() ?> 
+                    </div>
+                    <div class="readmore">
+                      <a href="<?php echo get_the_permalink() ?> ">Read More</a>
+                    </div>                      
+                  </div>
+                  
+                </div>
+              <?php
+              }
+              /* Restore original Post Data */
+              wp_reset_postdata();
+            } else {
+              // no posts found
+            }
+          ?>
+        </div>
+        <div class="pagination">
+          <?php
+            $big = 999999999; // need an unlikely integer
+
+            echo paginate_links( array(
+              'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+              'format' => '?paged=%#%',
+              'current' => max( 1, get_query_var('paged') ),
+              'total' => $the_query->max_num_pages,
+              'prev_text'  => __('<'),
+              'next_text' => __('>')
+            ) ); 
+          ?>
+        </div>
+      </div>
+    </div>
+  </div>    
+</div>
 <?php get_footer(); ?>
