@@ -252,6 +252,52 @@ li.widget{
 	float: right;
 }
 
+/* Foster_Form */
+.foster_heading{
+	text-align: center;
+	color: #ffffff;
+}
+.foster_form_container{
+	margin-top: 10px;
+	margin-bottom: 60px;
+	font-family: ProximaNova !important;
+}
+.foster_notice p{
+	font-size: large !important;
+	font-family: ProximaNova !important;
+	color: #000000;
+}
+.frm_section_spacing{
+	border-top: 0px !important;
+	margin-top: -2px !important;
+}
+.frm_style_formidable-style.with_frm_style button{
+	background-color: #ef9f08 !important;
+	margin-right: 18px !important; !important;
+	width: auto !important;
+	height: 38px !important;
+	font-family: ProximaNova !important;
+	color: #ffffff !important;
+	font-size: 26px !important;
+	font-weight: 700 !important;
+	line-height: 25px !important;
+}
+.frm_style_formidable-style.with_frm_style label.frm_primary_label, .frm_style_formidable-style.with_frm_style.frm_login_form label {
+	font-family: ProximaNova !important;
+	color: #000000;
+	font-size: 18px;
+}
+.frm_style_formidable-style.with_frm_style .frm-show-form  .frm_section_heading h3{
+	font-family: ProximaNova !important;
+	color: #000000;
+}
+.frm_style_formidable-style.with_frm_style .frm_radio label, .frm_style_formidable-style.with_frm_style .frm_checkbox label{
+	font-family: ProximaNova !important;
+	color: #000000;
+	font-size: 17px;
+}
+
+
 /*statistics*/
 .statistics{
 	background: #fff;
