@@ -1073,6 +1073,10 @@ img.aligncenter {
 .single-blog .heateorSssSharingArrow{
 	display: none !important;
 }
+/*Partner Content*/
+.general-content.partner .content{
+	line-height: 2;
+}
 
 /*Media queries*/
 

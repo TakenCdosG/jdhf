@@ -38,6 +38,8 @@
 	        	renderPart( 'button_call_to_action' );
 	        elseif( get_row_layout() == 'general_content' ):
 	        	renderPart( 'general_content' );
+	        elseif( get_row_layout() == 'partner_content' ):
+	        	renderPart( 'partner_content' );
 	        elseif( get_row_layout() == 'callout' ):
 				renderPart( 'callout');
 	        elseif( get_row_layout() == 'two_column_content' ):
