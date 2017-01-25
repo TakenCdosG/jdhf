@@ -232,17 +232,17 @@ li.widget{
 	-moz-box-flex: 1;               /* OLD - Firefox 19- */
 	-webkit-flex: 1;                /* Chrome */
 	-ms-flex: 1;                    /* IE 10 */
-	flex: 1;  
+	flex: 1;
 }
 .left-half-l{
 	background-size: cover !important;
 	background-position: center !important;
-	min-height: 100%;  
+	min-height: 100%;
 	-webkit-box-flex: 1;            /* OLD - iOS 6-, Safari 3.1-6 */
 	-moz-box-flex: 1;               /* OLD - Firefox 19- */
 	-webkit-flex: 1;                /* Chrome */
 	-ms-flex: 1;                    /* IE 10 */
-	flex: 1;  
+	flex: 1;
 }
 .right-half-l{
 	width:50%;
@@ -296,7 +296,6 @@ li.widget{
 	color: #000000;
 	font-size: 17px;
 }
-
 
 /*statistics*/
 .statistics{
@@ -827,7 +826,7 @@ img.aligncenter {
 .blog-list .post{
 	border: 1px solid #9a9a9a;
 	padding: 8px 18px 18px;
-	margin: 15px; 
+	margin: 15px;
 	background:#fff;
 	position: relative;
 }
@@ -840,7 +839,7 @@ img.aligncenter {
 .blog-list .post .date{
 	font-size: 21px;
     font-weight: bold;
-	font-family: "calluna", serif; 
+	font-family: "calluna", serif;
 	margin-bottom: 10px;
 }
 .blog-list .post .content{
@@ -854,7 +853,7 @@ img.aligncenter {
 	font-size: 21px;
 	padding:5px 20px 0 0;
 	border-top: 1px solid #e4e4e4;
-	font-family: "calluna", serif; 
+	font-family: "calluna", serif;
 	font-weight: bold;
 }
 .blog-list .post .featured-image{
@@ -865,7 +864,7 @@ img.aligncenter {
 	margin-bottom: 15px;
 }
 .blog-list .last-post .post{
-	padding-top: 18px; 
+	padding-top: 18px;
 }
 .blog-list .last-post .featured-image{
 	width:48%;
@@ -904,7 +903,7 @@ img.aligncenter {
 	border: 0;
 	width: 296px;
 	max-width: 100%;
-	padding: 8px; 
+	padding: 8px;
 	margin-bottom: 15px;
 	color: #333;
 }
@@ -974,9 +973,9 @@ img.aligncenter {
 	margin-bottom: 23px;
 }
 .single-blog .date{
-	font-family: "calluna", serif; 
+	font-family: "calluna", serif;
 	font-weight: bold;
-	color: #616161;	
+	color: #616161;
 	font-size: 21px;
 }
 .single-blog .title{
@@ -1068,7 +1067,7 @@ img.aligncenter {
 .single-blog .featured-image .heateor_sss_sharing_container{
 	position: absolute !important;
 	top: -11px !important;
-	left: -50px !important; 
+	left: -50px !important;
 }
 .single-blog .heateorSssSharingArrow{
 	display: none !important;
@@ -1212,7 +1211,7 @@ img.aligncenter {
 	.blog-list .last-post .readmore{
 		position: relative;
 		margin: 50px 0 10px;
-		bottom: 0; 
+		bottom: 0;
 	}
 	/*Blog detail*/
 	.single-blog .heateor_sss_sharing_container{
@@ -1221,7 +1220,7 @@ img.aligncenter {
 	.single-blog .featured-image .heateor_sss_sharing_container{
 		position: absolute !important;
 		top: -11px !important;
-		left: -11px !important; 
+		left: -11px !important;
 	}
 }
 
@@ -1296,7 +1295,7 @@ img.aligncenter {
 	/*.bio-container .content{
 		padding-left: 15px;
 		padding-right: 15px;
-	}*/	
+	}*/
 	/*Blog*/
 	.blog-list .grid-item{
 		width: 100% !important;
