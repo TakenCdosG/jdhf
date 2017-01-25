@@ -748,6 +748,8 @@ img.aligncenter {
 	overflow: hidden;
 	max-width: 100%;
 	margin: 50px 0;
+	margin-top: 25px !important;
+	margin-bottom: 25px !important;
 }
 .dog-detail .video iframe, .dog-detail .video object, .dog-detail .video embed {
 	position: absolute;
@@ -779,6 +781,9 @@ img.aligncenter {
 }
 .dog-detail .content p{
 	margin-bottom: 28px !important;
+}
+.dog-detail .gallery{
+	margin-top:25px;
 }
 .dog-detail .gallery .image{
 	margin:10px auto;
@@ -1259,6 +1264,11 @@ img.aligncenter {
 	/*Dog Detail*/
 	.dog-detail .meta-holder .button{
 		position: relative;
+	}
+	.dog-detail .video{
+		float: none !important;
+		padding-bottom: 56.25% !important;
+		width: 100% !important;
 	}
 	/* Bio Columns*/
 	.left-half-r, .right-half-r, .left-half-l, .left-half-l-container, .right-half-l, .bio-container, .bio-container .content{

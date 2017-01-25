@@ -38,16 +38,33 @@
 								<?php the_content(); ?>
 							</div>
 							<?php 
-							$embed = get_field('video_url');
-							if(!empty($embed)): ?>
-							<div class="video">
-								<?php 
-									
-									$str = str_replace("watch?v=", "embed/", $embed);					
-									echo '<iframe width="100%" src="'.$str.'" frameborder="0" allowfullscreen></iframe>';
+								$embed = get_field('video_url');
+								$row_count = count($embed);
+								if($row_count > 1) : $width = '47%'; $margin = '50px 1.5% 25px'; $padding = '34.25%'; $margin_minus = '0 -15px'; else : $width = '100%'; $padding = '56.25%'; $margin = '50px 0 25px'; $margin_minus = '0'; endif;
+							?>
+							<div class="clearfix" style="margin:<?php echo $margin_minus; ?>">
+								<?php	
+								// check if the repeater field has rows of data
+								if( have_rows('video_url') ):
+
+								 	// loop through the rows of data
+								    while ( have_rows('video_url') ) : the_row();
+
+								        // display a sub field value
+								        
+								        $str = str_replace("watch?v=", "embed/", get_sub_field('url'));					
+										echo '<div class="video" style="float:left; margin:'.$margin.'; padding-bottom:'.$padding.' ; width:'.$width.';"><iframe src="'.$str.'" frameborder="0" allowfullscreen></iframe></div>';
+
+								    endwhile;
+
+								else :
+
+								    // no rows found
+
+								endif;
 								?>
 							</div>
-							<?php endif; ?>
+							
 							<div class="gallery">
 								<?php 
 
