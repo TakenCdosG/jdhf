@@ -55,15 +55,11 @@
 						</form>
 						<div style="clear:both; width:296px; max-width:100%;">We'll never share your email address and you can opt out at any time.</div>
 						</div>
-
 						<!--End mc_embed_signup-->						
 					</div>
 				</div>
 			</div>
-			
-
 			<div class="row">
-
 				<div class="blog-list">
 					<?php
 						$args = Array(
