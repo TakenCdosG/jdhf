@@ -787,6 +787,10 @@ img.aligncenter {
 	width:100%;
 	height: auto;
 }
+.dog-detail .gallery .grid-item, .dog-detail .gallery .grid-sizer{
+	width:33.3%;
+	padding: 0 15px;
+}
 /*General Page*/
 .general-content.page h2{
 	color:#ffac0e;

@@ -55,14 +55,17 @@
 
 								if( $images ): ?>
 								    <div class="row">
-								        <?php foreach( $images as $image ): ?>
-								            <div class="col-xs-4 image">
-								                <a class="group" href="<?php echo $image['url']; ?>" rel="group">
-								                     <img src="<?php echo $image['sizes']['medium_custom']; ?>" alt="<?php echo $image['alt']; ?>" />
-								                </a>
-								                <p><?php echo $image['caption']; ?></p>
-								            </div>
-								        <?php endforeach; ?>
+								    	<div class="grid">
+									    	<div class="grid-sizer"></div>
+									        <?php foreach( $images as $image ): ?>
+									            <div class="grid-item image">
+									                <a class="group" href="<?php echo $image['url']; ?>" rel="group">
+									                     <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+									                </a>
+									                <p><?php echo $image['caption']; ?></p>
+									            </div>
+									        <?php endforeach; ?>
+								    	</div>
 								    </div>
 								<?php endif; ?>								
 							</div>
