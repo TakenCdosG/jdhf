@@ -17,7 +17,9 @@
 			'speedOut'		:	200, 
 			'overlayShow'	:	false
 		});
-		/*Masonry*/
+	});
+	$(window).on('load', function () {
+			/*Masonry*/
 		var $grid = $('.grid');
 		$grid.masonry({
 	          // options
@@ -27,7 +29,5 @@
 	          percentPosition: true
 	         /* stamp: '.grid-item:nth-child(2), .grid-item:nth-child(3)'*/
 	      });
-		
 	});
-
 })(jQuery); 
