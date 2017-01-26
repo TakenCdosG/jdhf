@@ -1105,16 +1105,15 @@ img.aligncenter {
 	height: 45px;
 	border:1px solid #757575 !important;
 }
-.two-column-content.contact .form input[type=submit] {
-	height: initial;
+.two-column-content.contact .form button {
+	height: initial !important;
 	background: #ffac0e;
 	border-radius: 4px !important;
 	border:0 !important;
-	font-weight: 800;
-	font-size: 21px;
+	font-size: 21px !important;
 	color:#fff !important;
 	text-transform: uppercase;
-	padding: 10px 28px;
+	padding: 10px 28px !important;
 }
 /*Media queries*/
 
