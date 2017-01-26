@@ -10,6 +10,8 @@
 						$args = Array(
 						  'post_type' => 'dog',
 						  /*'posts_per_page' => '6',*/
+						  'orderby' => 'title',
+						  'order'   => 'ASC',
 						  'tax_query' => array(
 							    array(
 							    'taxonomy' => 'dog_status',
@@ -34,19 +36,18 @@
 												<?php echo get_the_title() ?> 
 											</div>
 											<div class="meta">
-												Breed: <?php echo the_field('breed') ?>
+												<?php  if(get_field('breed')): echo 'Breed: ' . get_field('breed'); endif; ?>
 											</div>
 											<div class="meta">
-												Gender: <?php echo the_field('gender') ?>
+												<?php  if(get_field('gender')): echo 'Gender: ' . get_field('gender'); endif; ?>
 											</div>
 											<div class="meta">
-												Age: <?php echo the_field('age') ?>
+												<?php  if(get_field('age')): echo 'Age: ' . get_field('age'); endif; ?>
 											</div>
 											<div class="readmore">
 												<a href="<?php echo get_the_permalink() ?> ">Learn More</a>
 											</div>											
-										</div>
-											
+										</div>											
 									</div>
 									
 								</div>

@@ -33,6 +33,7 @@ h3{
 }
 a, a:hover{
 	text-decoration: none !important;
+	color:#68c4db;
 }
 /*header*/
 header{
@@ -715,6 +716,8 @@ img.aligncenter {
 .dog-list .dog .meta-holder{
 	padding:25px;
 	font-size: 17px;
+	position: relative;
+	min-height: 245px;
 }
 .dog-list .dog .image{
 	height: 320px;
@@ -733,6 +736,8 @@ img.aligncenter {
 .dog-list .dog .readmore{
 	text-transform: uppercase;
 	margin: 35px 0 0;
+	position: absolute;
+	bottom: 25px;
 }
 .dog-list .dog .readmore a{
 	color: #68c4db;
@@ -776,6 +781,9 @@ img.aligncenter {
 	position: absolute;
 	top: 0;
 	right: 0;
+}
+.dog-detail .meta-holder .button .max-button{
+	margin-top: 10px !important;
 }
 .dog-detail .content{
 	font-size: 24px;

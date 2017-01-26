@@ -11,10 +11,11 @@ add_post_type_support( 'dogs', 'thumbnail' );
 /*Scripts and styles*/
 
 function add_theme_scripts() {
-	/*theme css*/
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', null,'all');
+	
 	/*Boostrap css*/
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/includes/css/bootstrap.min.css', null,'all');
+    /*theme css*/
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', null,'all');
     /*FancyBox Css*/
     wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() .'/includes/js/libraries/fancybox/jquery.fancybox.css');
     /*FancyBox Js*/
@@ -163,7 +164,7 @@ function cptui_register_my_cpts_dog() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => array( "slug" => "dog", "with_front" => true ),
+        "rewrite" => array( "slug" => "%adopt%", "with_front" => true ),
         "query_var" => true,
         "supports" => array( "title", "editor", "thumbnail"),
     );
@@ -223,3 +224,38 @@ function add_custom_sizes( $imageSizes ) {
   return array_merge( $imageSizes, $my_sizes );
 }
 add_filter( 'image_size_names_choose', 'add_custom_sizes' );
+
+/*slug*/
+function wpa_course_post_link( $post_link, $id = 0 ){
+    $post = get_post($id);  
+    if ( is_object( $post ) ){
+        $terms = wp_get_object_terms( $post->ID, 'dog_status' );
+        foreach ($terms as $term) {
+            if( $term->slug == 'adopted'){
+                return str_replace( '%adopt%' , 'success-stories' , $post_link );
+            }else{
+               return str_replace( '%adopt%' , 'adopt' , $post_link );
+            }
+        }
+    }
+    return $post_link;  
+}
+add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );
+
+/**
+ * Rewrite tags for plugin
+ */
+function dcc_rewrite_tags() {
+    add_rewrite_tag('%dogf%', '([^&]+)');
+}
+
+add_action('init', 'dcc_rewrite_tags', 10, 0);
+
+/**
+ * Rewrite rules for plugin 
+ */
+function dcc_rewrite_rules() {
+    add_rewrite_rule('^[^/]*/([^/]*)/?','index.php?dog=page-slug&dog=$matches[1]','top');
+}
+
+add_action('init', 'dcc_rewrite_rules', 10, 0);
