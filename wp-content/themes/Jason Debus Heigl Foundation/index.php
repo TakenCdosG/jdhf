@@ -44,6 +44,8 @@
 				renderPart( 'callout');
 	        elseif( get_row_layout() == 'two_column_content' ):
 	        	renderPart( 'two_column_content' );
+	        elseif( get_row_layout() == 'contact' ):
+	        	renderPart( 'contact' );
 	        elseif( get_row_layout() == 'founders' ):
 	        	renderPart( 'founders' );
 	        elseif( get_row_layout() == 'dogs_list' ):
