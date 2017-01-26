@@ -75,15 +75,15 @@ header{
 .nav li, .menu li{
 	font-size: 22px;
 }
-.nav li:nth-last-child(-n+2){
+.nav li:nth-last-child(-n+3){
 	float: right;
-	border:1px solid #fff;
-	margin:0 5px;
+	border: 1px solid #fff;
+	margin-right: 10px;
 }
 .nav li a, .menu li a{
 	color: #fff !important;
 	font-weight: 900;
-	padding:13px 15px !important;
+	padding:13px 12px !important;
 	line-height: 10px !important;
 }
 .nav li a:hover, .menu li a:hover{
