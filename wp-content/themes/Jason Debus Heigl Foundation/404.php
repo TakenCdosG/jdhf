@@ -6,19 +6,15 @@
  */
 ?>
 <?php get_header(); ?>
-<div class="white-bg">
+<div class='no-header'></div>
+<div class="general-content page notfound">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="content col-lg-12">
 				<div>
-					<?php
-					if (have_posts()) :
-						while (have_posts()) :
-							the_post();
-							the_content();
-						endwhile;
-					endif;
-					?>
+					<h1>404</h1>
+					<h2>Content not found</h2>
+					<p><a href="<?php echo site_url(); ?>">Back to home</p></a>
 				</div>
 			</div>
 		</div>

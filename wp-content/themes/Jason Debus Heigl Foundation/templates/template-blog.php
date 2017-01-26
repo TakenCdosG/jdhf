@@ -7,6 +7,7 @@
  */
 ?>
 <?php get_header(); ?>
+<div class='no-header'></div>
 <div class="white-bg" style="padding-top:0;">
 	<div class="blog-header">
 		<div class="container">

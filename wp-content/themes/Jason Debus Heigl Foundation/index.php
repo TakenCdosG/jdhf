@@ -19,10 +19,18 @@
 		endif;
 	}
 	// check if the flexible content field has rows of data
+
 	if( have_rows('page_content') ):
 	     // loop through the rows of data
+		
+		$page_content = get_field('page_content');
+		$key = array_search('header', array_column($page_content, 'acf_fc_layout'));
+		if(!is_int($key)):
+			echo "<div class='no-header'></div>";
+		endif;
+
 	    while ( have_rows('page_content') ) : the_row();
-	        if( get_row_layout() == 'header' ):
+	    	if( get_row_layout() == 'header' ):
 				renderPart('header');
 	        elseif( get_row_layout() == 'statistics' ):
 	        	renderPart('statistics');
@@ -64,6 +72,7 @@
 	    endwhile;
 	else :
 		?>
+		<div class='no-header'></div>
 		<div class="general-content page">
 			<div class="container">
 				<div class="row">

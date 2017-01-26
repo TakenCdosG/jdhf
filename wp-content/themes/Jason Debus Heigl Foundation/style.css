@@ -1115,6 +1115,15 @@ img.aligncenter {
 	text-transform: uppercase;
 	padding: 10px 28px !important;
 }
+/*404*/
+.general-content.page.notfound h1{
+	font-size: 100px !important;
+	text-align: center;
+}
+.general-content.page.notfound *{
+	text-align: center;
+	color:#302c2d;
+}
 /*Media queries*/
 
 /* Large Devices, Wide Screens */

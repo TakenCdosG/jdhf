@@ -6,7 +6,7 @@
  */
 ?>
 <?php get_header(); ?>
-
+<div class='no-header'></div>
 <div class="white-bg">
   <div class="container">
     <div class="row">
