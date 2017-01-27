@@ -1445,6 +1445,10 @@ img.aligncenter {
 	.left-half-l, .left-half-r{
 		min-height: 350px;
 	}
+	/*Donate button*/
+	.donate-button{
+		top:54.3%;
+	}
 
 }
 
