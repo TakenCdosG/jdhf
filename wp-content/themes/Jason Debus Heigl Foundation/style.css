@@ -1461,7 +1461,14 @@ img.aligncenter {
 	.donate-button{
 		top:54.3%;
 	}
-
+	/*Menu*/	
+	.no-header{
+		height: 160px;
+	}
+	.navbar button{
+		position: relative;
+		top:-20px !important;
+	}
 }
 
 /* Custom, iPhone Retina */
@@ -1492,6 +1499,17 @@ img.aligncenter {
 	}
 	.menu .logo{
 		text-align: center;
+	}
+	.navbar{
+		position: relative;
+		top:-50px;
+	}
+	.navbar button{
+		position: relative;
+		top:-40px;
+	}
+	.no-header{
+		height: 160px;
 	}
 
 }

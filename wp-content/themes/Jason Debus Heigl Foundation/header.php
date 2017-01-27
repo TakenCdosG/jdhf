@@ -34,12 +34,12 @@
 		<header class="main-header">
 			<div class="container menu">
 				<div class="row menu">
-					<div class="col-lg-4 ">
+					<div class="col-lg-4 col-xs-8">
 						<div class="logo">
 							<a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt=""></a>
 						</div>
 					</div>
-					<div class="col-lg-8">
+					<div class="col-lg-8 col-xs-12">
 						<div class="navigation-container">
 							<nav class="navbar navbar-inverse" role="navigation">
 								<div class="navbar-header">
