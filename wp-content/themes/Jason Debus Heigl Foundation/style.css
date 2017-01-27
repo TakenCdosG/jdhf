@@ -171,6 +171,15 @@ li.widget{
 .footer .copyright li{
 	float: left;
 	list-style: none;
+	margin-right: 5px;
+}
+.footer .copyright li ul li:before{
+	content: "•";
+	display: inline-block;
+	margin-right: 2px;
+}
+.footer .copyright li ul li:first-child:before{
+	display: none;
 }
 
 /*Donate Button*/

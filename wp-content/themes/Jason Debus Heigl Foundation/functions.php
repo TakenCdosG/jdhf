@@ -260,3 +260,14 @@ function dcc_rewrite_rules() {
 }
 
 add_action('init', 'dcc_rewrite_rules', 10, 0);
+
+/*Current Year Shortcode*/
+function year_shortcode() {
+  $year = date('Y');
+  return $year;
+}
+add_shortcode('current_year', 'year_shortcode');
+
+// Enable shortcodes in text widgets
+
+add_filter('widget_text','do_shortcode');

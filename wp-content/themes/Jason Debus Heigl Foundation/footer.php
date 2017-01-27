@@ -55,8 +55,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<ul>
-							<li>© The Jason Debus Heigl Foundation 2008-<?php echo date("Y"); ?>&nbsp</li>
+						
+							
 							<?php
 								if(is_active_sidebar('sidebar-6')){
 									dynamic_sidebar('sidebar-6');
