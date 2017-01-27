@@ -78,7 +78,7 @@
 									        <?php foreach( $images as $image ): ?>
 									            <div class="grid-item image">
 									                <a class="group" href="<?php echo $image['url']; ?>" rel="group">
-									                     <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+									                     <img src="<?php echo $image['sizes']['medium_large']; ?>" alt="<?php echo $image['alt']; ?>" />
 									                </a>
 									                <p><?php echo $image['caption']; ?></p>
 									            </div>
