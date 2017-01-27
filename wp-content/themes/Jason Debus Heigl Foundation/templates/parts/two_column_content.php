@@ -18,6 +18,13 @@
 					<?php echo the_sub_field('column_2_text') ?>
 				</div>
 			</div>								
-		</div>			
+		</div>
+		<div class="row">
+			<div class="content col-lg-12">
+				<div class="content">
+					<?php echo the_sub_field('bottom_panel_text') ?>
+				</div>
+			</div>							
+		</div>				
 	</div>
 </div>
