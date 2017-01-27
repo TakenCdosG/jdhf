@@ -9,7 +9,7 @@
 					<?php 
 						$args = Array(
 						  'post_type' => 'dog',
-						  /*'posts_per_page' => '6',*/
+						  'posts_per_page' => '-1',
 						  'orderby' => 'title',
 						  'order'   => 'ASC',
 						  'tax_query' => array(
