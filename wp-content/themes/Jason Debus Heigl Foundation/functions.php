@@ -256,10 +256,22 @@ add_action('init', 'dcc_rewrite_tags', 10, 0);
  */
 function dcc_rewrite_rules() {
     
-    add_rewrite_rule('^[^/]*/([^/]*)/?','index.php?dog=page-slug&dog=$matches[1]','top');
+    //add_rewrite_rule('^[^/]*/([^/]*)/?','index.php?dog=page-slug&dog=$matches[1]','top');
+    add_rewrite_rule(
+        'success-stories/(.+?)(/page/([0-9]+))?/?$',
+        'index.php?post_type=dog&dog=page-slug&dog=$matches[1]',
+        'top'
+    );
+    add_rewrite_rule(
+        'adopt/(.+?)(/page/([0-9]+))?/?$',
+        'index.php?post_type=dog&dog=page-slug&dog=$matches[1]',
+        'top'
+    );
+
 }
 
 add_action('init', 'dcc_rewrite_rules', 10, 0);
+
 
 /*Current Year Shortcode*/
 function year_shortcode() {

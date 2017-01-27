@@ -74,17 +74,18 @@
 						if ( $the_query->have_posts() ) {
 							while ( $the_query->have_posts() ) {
 								$the_query->the_post();
+								$featured_image = get_the_post_thumbnail_url();
 							?>
 								<div class="last-post"> 
 									<div class="post">
-										<div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )"></div>
+										<?php if(!empty($featured_image)): ?><a href="<?php echo get_the_permalink() ?> "><div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )"></div></a> <?php endif;?>
 
 										<div class="right-col">
 											<div class="date">
 												<?php echo get_the_date() ?> 
 											</div>
 											<div class="title">
-												<?php echo get_the_title() ?> 
+												<a href="<?php echo get_the_permalink() ?> "><?php echo get_the_title() ?></a>
 											</div>
 											<div class="content">
 												<?php echo get_the_excerpt() ?> 
@@ -125,6 +126,7 @@
 						);
 						// The Query
 						$the_query = new WP_Query( $args );
+						$featured_image = get_the_post_thumbnail_url();
 
 						// The Loop
 						if ( $the_query->have_posts() ) {
@@ -136,10 +138,10 @@
 										<div class="date">
 											<?php echo get_the_date() ?> 
 										</div>
-										<div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )">
-										</div>
+										<?php if(!empty($featured_image)): ?><a href="<?php echo get_the_permalink() ?> "><div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )"></div></a> <?php endif;?>
+
 										<div class="title">
-											<?php echo get_the_title() ?> 
+											<a href="<?php echo get_the_permalink() ?> "><?php echo get_the_title() ?></a>
 										</div>
 										<div class="content">
 											<?php echo get_the_excerpt() ?> 
