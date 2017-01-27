@@ -246,7 +246,7 @@ add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );
  * Rewrite tags for plugin
  */
 function dcc_rewrite_tags() {
-    add_rewrite_tag('%dogf%', '([^&]+)');
+    add_rewrite_tag('%dog%', '([^&]+)');
 }
 
 add_action('init', 'dcc_rewrite_tags', 10, 0);
@@ -255,6 +255,7 @@ add_action('init', 'dcc_rewrite_tags', 10, 0);
  * Rewrite rules for plugin 
  */
 function dcc_rewrite_rules() {
+    
     add_rewrite_rule('^[^/]*/([^/]*)/?','index.php?dog=page-slug&dog=$matches[1]','top');
 }
 
