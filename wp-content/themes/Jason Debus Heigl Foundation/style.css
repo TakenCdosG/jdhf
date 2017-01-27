@@ -829,7 +829,7 @@ img.aligncenter {
 	height: auto;
 }
 .dog-detail .gallery .grid-item, .dog-detail .gallery .grid-sizer{
-	width:33.3%;
+	width:25%;
 	padding: 0 15px;
 }
 /*General Page*/
