@@ -12,8 +12,8 @@
 		<div class="row">
 			<div class="content col-lg-12">
 				<div>
-					<h1>404</h1>
-					<h2>Content not found</h2>
+					<h1>Page Not Found</h1>
+					<h2>Apologies, but the page you have requested could not be found.</h2>
 					<p><a href="<?php echo site_url(); ?>">Back to home</p></a>
 				</div>
 			</div>

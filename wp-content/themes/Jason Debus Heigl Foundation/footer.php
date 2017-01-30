@@ -10,28 +10,28 @@
 	<div class="pre-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6">
 					<?php
 						if(is_active_sidebar('sidebar-1')){
 							dynamic_sidebar('sidebar-1');
 						}
 					?>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6">
 					<?php
 						if(is_active_sidebar('sidebar-2')){
 							dynamic_sidebar('sidebar-2');
 						}
 					?>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6">
 					<?php
 						if(is_active_sidebar('sidebar-3')){
 							dynamic_sidebar('sidebar-3');
 						}
 					?>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-3 col-xs-6">
 					<?php
 						if(is_active_sidebar('sidebar-4')){
 							dynamic_sidebar('sidebar-4');

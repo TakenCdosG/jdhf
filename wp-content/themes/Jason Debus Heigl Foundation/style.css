@@ -1442,6 +1442,10 @@ img.aligncenter {
 	.single-blog .featured-image{
 		min-height: 333px;
 	}
+	/*footer*/
+	.pre-footer .container{
+		width:50%;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -1468,6 +1472,10 @@ img.aligncenter {
 	.navbar button{
 		position: relative;
 		top:-20px !important;
+	}
+	/*footer*/
+	.pre-footer .container{
+		width:80%;
 	}
 }
 
@@ -1515,7 +1523,7 @@ img.aligncenter {
 }
 @media (max-width : 620px) {
 	/*Blog*/
-	.col-xs-6{
+	.blog-header .col-xs-6{
 		width:100% !important;
 		float: none;
 	}
