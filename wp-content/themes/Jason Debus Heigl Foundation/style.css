@@ -75,9 +75,9 @@ header{
 	font-size: 22px;
 }
 .nav li:nth-last-child(-n+3){
-	float: right;
 	border: 1px solid #fff;
-	margin-right: 10px;
+	margin-right: 6px;
+	margin-left: 5px;
 }
 .nav li a, .menu li a{
 	color: #fff !important;
@@ -310,10 +310,10 @@ li.widget{
 }
 .frm_style_formidable-style.with_frm_style button{
 	background-color: #ef9f08 !important;
-	margin-right: 18px !important; !important;
+	margin-right: 18px !important;
 	width: auto !important;
 	height: 38px !important;
-	font-family: "proxima-nova",sans-serif !important;
+	font-family: "proxima-nova", sans-serif !important;
 	color: #ffffff !important;
 	font-size: 26px !important;
 	font-weight: 700 !important;

@@ -284,10 +284,12 @@ add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 199, 2 );
 /**
  * Redirect non-admins to the homepage after logging into the site.
  */
-function acme_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
+function admin_default_page() {
+	if (!current_user_can('administrator') && !is_admin()) {
+		return '/foster';
+	}
 }
-add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
+add_filter('login_redirect', 'admin_default_page');
 
 /**
 * Disable_WP_Toolbar
