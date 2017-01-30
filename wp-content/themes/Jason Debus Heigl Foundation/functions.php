@@ -267,14 +267,19 @@ add_action('init', 'dcc_rewrite_rules', 10, 0);
 /**
 * Login & Logout Menu
 **/
-add_filter('wp_nav_menu_items', 'add_login_logout_link', 10, 2); function add_login_logout_link($items, $args) {
-	ob_start();
-	wp_loginout('index.php');
-	$loginoutlink = ob_get_contents();
-	ob_end_clean();
-	$items .= '<li>'. $loginoutlink .'</li>';
+function add_login_logout_register_menu( $items, $args ) {
+	if ( $args->theme_location != 'main-menu' ) {
+		return $items;
+	}
+	
+	if ( is_user_logged_in() ) {
+		$items .= '<li><a href="' . wp_logout_url() . '">' . __( 'Log Out' ) . '</a></li>';
+	} else {
+		$items .= '<li><a href="' . wp_login_url() . '">' . __( 'Log In' ) . '</a></li>';
+	}
 	return $items;
 }
+add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 199, 2 );
 
 /*Current Year Shortcode*/
 function year_shortcode() {
