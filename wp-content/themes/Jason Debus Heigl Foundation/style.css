@@ -76,8 +76,8 @@ header{
 }
 .nav li:nth-last-child(-n+3){
 	border: 1px solid #fff;
-	margin-right: 6px;
-	margin-left: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
 }
 .nav li a, .menu li a{
 	color: #fff !important;
