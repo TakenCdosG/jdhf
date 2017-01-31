@@ -120,7 +120,7 @@
 						$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
 						$args = Array(
 						  'post_type' => 'post',
-						  'posts_per_page' => '7',
+						  'posts_per_page' => '6',
 						  'offset' => '1',
   						  'paged' => $paged
 						);

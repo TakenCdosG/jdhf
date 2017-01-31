@@ -57,9 +57,10 @@
 						while (have_posts()) :
 
 							the_post();
+							$featured_image = get_the_post_thumbnail_url();
 							echo "<div class='date'>".get_the_date()."</div>";
 							echo "<div class='title'><h2>".get_the_title()."</h2></div>";
-							echo "<div class='featured-image' style='background-image: url( ". get_the_post_thumbnail_url()." )'>".do_shortcode('[Sassy_Social_Share type="floating"]') ."</div>";
+							if(!empty($featured_image)): echo "<div class='featured-image' style='background-image: url( ". get_the_post_thumbnail_url()." )'>".do_shortcode('[Sassy_Social_Share type="floating"]') ."</div>"; endif;
 							echo "<div class='content'>".wpautop(get_the_content())."</div>";
 							$categories = get_the_category();
 							$tags = get_the_tags();
