@@ -286,7 +286,7 @@ add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 10, 2 );
  */
 function admin_default_page() {
 	if (!current_user_can('administrator') && !is_admin()) {
-		return '/foster';
+		return '/give-landing';
 	}
 }
 add_filter('login_redirect', 'admin_default_page');
