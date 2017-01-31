@@ -126,12 +126,11 @@
 						);
 						// The Query
 						$the_query = new WP_Query( $args );
-						$featured_image = get_the_post_thumbnail_url();
-
 						// The Loop
 						if ( $the_query->have_posts() ) {
 							while ( $the_query->have_posts() ) {
 								$the_query->the_post();
+								$featured_image = get_the_post_thumbnail_url();
 							?>
 								<div class="grid-item"> 
 									<div class="post">
