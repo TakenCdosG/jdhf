@@ -1446,6 +1446,9 @@ img.aligncenter {
 	.pre-footer .container{
 		width:70%;
 	}
+	.pre-footer .col-sm-3{
+		padding-left: 56px;
+	}
 }
 
 /* Extra Small Devices, Phones */
