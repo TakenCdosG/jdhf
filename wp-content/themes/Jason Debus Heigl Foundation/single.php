@@ -61,30 +61,25 @@
 							echo "<div class='title'><h2>".get_the_title()."</h2></div>";
 							echo "<div class='featured-image' style='background-image: url( ". get_the_post_thumbnail_url()." )'>".do_shortcode('[Sassy_Social_Share type="floating"]') ."</div>";
 							echo "<div class='content'>".wpautop(get_the_content())."</div>";
-							$categories = get_categories( array(
-							    'orderby' => 'name',
-							    'parent'  => 0
-							) );
-							echo "<div class='cat-tags-container'><div class='cat-tags'>Categories:</div>"; 
-							foreach ( $categories as $category ) {
-							    printf( '<a href="%1$s">%2$s</a>',
-							        esc_url( get_category_link( $category->term_id ) ),
-							        esc_html( $category->name )
-							    );
+							$categories = get_the_category();
+							$tags = get_the_tags();
+							$cat_op = '';
+							$tag_op = '';
+							echo '<div class="cat-tags-container"><div class="cat-tags">Categories:</div>';
+							if ( ! empty( $categories ) ) {
+							    foreach( $categories as $category ) {
+							        $cat_op .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a>';
+							    }
+							    echo trim( $cat_op, $separator );
 							}
-							echo("</div>");
-							$tags= get_tags( array(
-							    'orderby' => 'name',
-							    'parent'  => 0
-							) );
-							echo "<div class='cat-tags-container'><div class='cat-tags'>Tags:</div>";
-							foreach ( $tags as $tag ) {
-							    printf( '<a href="%1$s">%2$s</a>',
-							        esc_url( get_tag_link( $tag->term_id ) ),
-							        esc_html( $tag->name )
-							    );
+							echo '</div> <div class="cat-tags-container"><div class="cat-tags">Tags:</div>';
+							if ( ! empty( $tags ) ) {
+							    foreach( $tags as $tag ) {
+							        $tag_op .= '<a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '" >' . esc_html( $tag->name ) . '</a>';
+							    }
+							    echo trim( $tag_op, $separator );
 							}
-							echo("</div>");
+							echo '</div>'; 
 						endwhile;
 					endif;
 					?>
@@ -95,7 +90,7 @@
 			<div class="col-lg-12">
 				<div class="mail-chimp-subscribe">
 					<h3>Keep up with all the latest Blog posts</h3>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+					<h4></h4>
 					<!-- Begin MailChimp Signup Form -->
 					<div id="mc_embed_signup">
 					<form action="//jasonheiglfoundation.us11.list-manage.com/subscribe/post?u=d57a7d726b51705cc02e045f4&amp;id=68223ebbfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

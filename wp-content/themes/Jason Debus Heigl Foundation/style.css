@@ -1542,3 +1542,9 @@ img.aligncenter {
 		width: 900px;
 	}
 }
+@media (min-width : 768px){
+	/*footer*/
+	.pre-footer .col-sm-3{
+		padding-left: 56px;
+	}
+}
