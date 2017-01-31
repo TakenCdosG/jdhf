@@ -22,7 +22,7 @@
 
 	if( have_rows('page_content') ):
 	     // loop through the rows of data
-		
+
 		$page_content = get_field('page_content');
 		$key = array_search('header', array_column($page_content, 'acf_fc_layout'));
 		if(!is_int($key)):
@@ -68,6 +68,8 @@
 	        	renderPart( 'general_page_content' );
 	        elseif( get_row_layout() == 'form_panel' ):
 	        	renderPart( 'form_panel' );
+	        elseif( get_row_layout() == 'profile' ):
+	        	renderPart( 'profile' );
 	        endif;
 	    endwhile;
 	else :

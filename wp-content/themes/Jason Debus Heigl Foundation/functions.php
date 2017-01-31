@@ -279,14 +279,14 @@ function add_login_logout_register_menu( $items, $args ) {
 	}
 	return $items;
 }
-add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 199, 2 );
+add_filter( 'wp_nav_menu_items', 'add_login_logout_register_menu', 10, 2 );
 
 /**
  * Redirect non-admins to the homepage after logging into the site.
  */
 function admin_default_page() {
 	if (!current_user_can('administrator') && !is_admin()) {
-		return '/foster';
+		return '/give-landing';
 	}
 }
 add_filter('login_redirect', 'admin_default_page');
@@ -300,6 +300,26 @@ function disable_toolbar() {
 	}
 }
 add_action('after_setup_theme', 'disable_toolbar');
+
+/**
+ * Give Form Require Fields
+ */
+
+function give_form_req_fields( $required_fields ) {
+	//First Name
+	$required_fields['give_first'] = array(
+		'error_id' => 'invalid_last_name',
+		'error_message' => __( 'Please enter your first name.', 'give' )
+	);
+
+	//Last Name
+	$required_fields['give_last'] = array(
+		'error_id' => 'invalid_last_name',
+		'error_message' => __( 'Please enter your last name.', 'give' )
+	);
+	return $required_fields;
+}
+add_filter( 'give_purchase_form_required_fields', 'give_form_req_fields' );
 
 /*Current Year Shortcode*/
 function year_shortcode() {
