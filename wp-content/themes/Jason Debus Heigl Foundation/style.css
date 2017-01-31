@@ -37,7 +37,7 @@ a, a:hover{
 }
 /*header*/
 header{
-	position: absolute;
+	position: fixed;
 	top:50px;
 	z-index: 10;
 	width: 100%;
@@ -212,7 +212,7 @@ li.widget{
 	position: relative;
 	display: block;
 }
-	.header .content{
+.header .content{
 	position: absolute;
 	top:50%;
 	transform: translateY(-50%);
