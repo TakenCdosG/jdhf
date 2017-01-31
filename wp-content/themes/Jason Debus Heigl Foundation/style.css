@@ -1446,9 +1446,6 @@ img.aligncenter {
 	.pre-footer .container{
 		width:70%;
 	}
-	.pre-footer .col-sm-3{
-		padding-left: 56px;
-	}
 }
 
 /* Extra Small Devices, Phones */
@@ -1543,5 +1540,11 @@ img.aligncenter {
 	}
 	.single-blog .container{
 		width: 900px;
+	}
+}
+@media (min-width : 768px){
+	/*footer*/
+	.pre-footer .col-sm-3{
+		padding-left: 56px;
 	}
 }
