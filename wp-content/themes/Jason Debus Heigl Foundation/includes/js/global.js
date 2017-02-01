@@ -1,5 +1,42 @@
 (function ($) {
 
+	function sticky() {
+		if ($(this).scrollTop() === 0) {
+			$('header').css({
+					'box-shadow':         'none',
+					'-moz-box-shadow':    'none',
+					'-webkit-box-shadow': 'none',
+					'background-color':   'transparent',
+					'transition':         'background-color 0.1s ease-out',
+					'-webkit-transition': 'background-color 0.1s ease-out',
+					'-moz-transition': 'background-color 0.1s ease-out',
+					'-o-transition': 'background-color 0.1s ease-out',
+					'top':           '50px'
+
+				 });
+			$('.menu img').css({
+					'height':           'initial',
+					'width':           'initial'		
+			});
+		}
+		else {
+			$('header').css({
+					'background-color': '#333',
+					'transition':       'background-color 0.1s ease-out',
+					'-webkit-transition': 'background-color 0.1s ease-out',
+					'-moz-transition': 'background-color 0.1s ease-out',
+					'-o-transition': 'background-color 0.1s ease-out',
+					'top':              '0px',
+					'height':           '102px',
+					'padding':           '12px',
+			 });
+			$('.menu img').css({
+					'height':           '78px',
+					'width':           'auto'		
+			});
+		}
+	};
+
 	$(document).ready(function(){
 		/*Setting type of header*/
 		/*if($('.main-header').next().is('.header')){
@@ -17,6 +54,8 @@
 			'speedOut'		:	200,
 			'overlayShow'	:	false
 		});
+		
+		sticky();
 	});
 	$(window).on('load', function () {
 			/*Masonry*/
@@ -29,34 +68,10 @@
 			percentPosition: true
 			/* stamp: '.grid-item:nth-child(2), .grid-item:nth-child(3)'*/
 		});
-		$(window).scroll(function() {
-			if ($(this).scrollTop() === 0) {
-				$('header').css({
-						'box-shadow':         'none',
-						'-moz-box-shadow':    'none',
-						'-webkit-box-shadow': 'none',
-						'background-color':   'transparent',
-						'transition':         'background-color 0.1s ease-out',
-						'-webkit-transition': 'background-color 0.1s ease-out',
-						'-moz-transition': 'background-color 0.1s ease-out',
-						'-o-transition': 'background-color 0.1s ease-out'
-
-					 });
-			}
-			else {
-				$('header').css({
-						'background-color': '#333',
-						'transition':       'background-color 0.1s ease-out',
-						'-webkit-transition': 'background-color 0.1s ease-out',
-						'-moz-transition': 'background-color 0.1s ease-out',
-						'-o-transition': 'background-color 0.1s ease-out',
-						'top':              '0px',
-						'height':           '160px',
-						'padding-top':      '50px'
-
-				 });
-			}
-		});
+		sticky();
+	});
+	$(window).scroll(function(){
+		sticky();
 	});
 
 })(jQuery);

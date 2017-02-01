@@ -492,7 +492,7 @@ li.widget{
 	margin: 0 auto !important;
 }
 .donation-w-bg .text .give-recurring-donors-choice{
-	width:420px;
+	width:542px;
 	max-width: 90%;
 	background: #90cede;
 	border:16px solid #dadada;
@@ -501,7 +501,7 @@ li.widget{
 	margin:25px auto;
 }
 .donation-w-bg .text .give-recurring-donors-choice label{
-	font-size: 24px;
+	font-size: 21px;
 	padding:10px 6px;
 	line-height: 1;
 }
