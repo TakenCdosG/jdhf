@@ -12,6 +12,7 @@
 					'-moz-transition': 'all 0.4s ease-out',
 					'-o-transition': 'all 0.4s ease-out',
 					'padding-top':           '50px',
+					'height': '190px'
 
 				 });
 			$('.menu img').css({
@@ -26,12 +27,12 @@
 					'-webkit-transition': 'all 0.4s ease-out',
 					'-moz-transition': 'all 0.4s ease-out',
 					'-o-transition': 'all 0.4s ease-out',
-					'height':           'auto',
+					'height':           '102px',
 					'padding-top':           '12px',
 			 });
 			$('.menu img').css({
-					'height':           '78px',
-					'width':           'auto'		
+					'height':           'auto',
+					'width':           '268px'		
 			});
 		}
 	};
