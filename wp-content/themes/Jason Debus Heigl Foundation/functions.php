@@ -321,6 +321,18 @@ function give_form_req_fields( $required_fields ) {
 }
 add_filter( 'give_purchase_form_required_fields', 'give_form_req_fields' );
 
+/**
+* Set default wp email
+**/
+function new_mail_from($old) {
+	return 'webmaster@kheigl.com';
+}
+function new_mail_from_name($old) {
+	return 'Jason Debus Heigl Foundation Webmaster';
+}
+add_filter('wp_mail_from', 'new_mail_from');
+add_filter('wp_mail_from_name', 'new_mail_from_name');
+
 /*Current Year Shortcode*/
 function year_shortcode() {
 	$year = date('Y');
