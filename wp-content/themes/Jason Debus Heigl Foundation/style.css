@@ -74,6 +74,9 @@ header{
 .nav li, .menu li{
 	font-size: 21px;
 }
+.nav .current-menu-item, .nav li:hover{
+	border-color:#ffac0e !important;
+}
 .nav li:nth-last-child(-n+3){
 	border: 1px solid #fff;
 	margin-right: 5px;
