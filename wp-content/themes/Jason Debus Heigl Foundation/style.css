@@ -1551,3 +1551,9 @@ img.aligncenter {
 		padding-left: 56px;
 	}
 }
+
+@media screen and (max-width: 600px){
+	header{
+		top:0;
+	}
+}
