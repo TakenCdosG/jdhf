@@ -80,7 +80,7 @@ header{
 .nav li:nth-last-child(-n+3){
 	border: 1px solid #fff;
 	margin-right: 5px;
-    margin-left: 5px;
+	margin-left: 5px;
 }
 .nav .dropdown .dropdown-menu li{
 	border:0 !important;
@@ -99,7 +99,7 @@ header{
 	color: #ffac0e !important;
 }
 .dropdown:hover .dropdown-menu {
-    display: block;
+	display: block;
 }
 .dropdown-menu{
 	background: #333;
@@ -108,7 +108,7 @@ header{
 	border: 0 !important;
 	float: left !important;
 	display: block;
-    clear: both;
+	clear: both;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
 	background: transparent;
@@ -587,7 +587,7 @@ li.widget{
 	display: inline-block;
 	background: #fff;
 	color:#302c2d;font-weight: 700;
-    font-size: 18px;
+	font-size: 18px;
 }
 .programs .item .button {
 	text-align: center;
@@ -869,7 +869,7 @@ img.aligncenter {
 	margin-left:72px;
 }
 .grid-sizer, .grid-item {
- 	width: 50%;
+	width: 50%;
 	float: left;
 }
 .blog-list{
@@ -893,7 +893,7 @@ img.aligncenter {
 }
 .blog-list .post .date{
 	font-size: 21px;
-    font-weight: bold;
+	font-weight: bold;
 	font-family: "calluna", serif;
 	margin-bottom: 10px;
 }
@@ -988,8 +988,8 @@ img.aligncenter {
 }
 .blog-header .input-container{
 	float: right;
-    display: block;
-    width: 325px;
+	display: block;
+	width: 325px;
 }
 .pagination{
 	width: 100%;
@@ -1193,10 +1193,10 @@ img.aligncenter {
 	#myNavbar ul li ul{
 		padding: 0;
 		border: 0;
-	    position: relative;
-	    width: 100%;
-	    margin-bottom: 14px;
-	    box-shadow: none !important;
+		position: relative;
+		width: 100%;
+		margin-bottom: 14px;
+		box-shadow: none !important;
 	}
 	#myNavbar ul li ul li{
 		float: left;

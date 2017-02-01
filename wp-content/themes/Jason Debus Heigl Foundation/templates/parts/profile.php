@@ -1,9 +1,6 @@
 <?php
 /**
- * Template Name: User Profile
- *
- * Allow users to update their profiles from Frontend.
- *
+ * Allow update profile form front-end
  */
 
 /* Get user info. */

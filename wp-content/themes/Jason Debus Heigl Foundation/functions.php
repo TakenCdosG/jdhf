@@ -273,16 +273,17 @@ function add_login_logout_register_menu( $items, $args ) {
 	}
 
 	if ( is_user_logged_in() ) {
-		$items .= '<li class="dropdown">
-			<a class="dropdown-toggle" href="http://jdhf.thinkcreativegroup.com/give-landing/">My Account
-				<span class="caret"></span>
-			</a>
-			<ul role="menu" class=" dropdown-menu">
-				<li>
-					<a href="' . wp_logout_url() . '">' . __( 'Log Out' ) . '</a>
-				</li>
-			</ul>
-		</li>';
+		$items .= 
+			'<li class="dropdown">
+				<a class="dropdown-toggle" href="http://jdhf.thinkcreativegroup.com/give-landing/">My Account
+					<span class="caret"></span>
+				</a>
+				<ul role="menu" class=" dropdown-menu">
+					<li>
+						<a href="' . wp_logout_url() . '">' . __( 'Log Out' ) . '</a>
+					</li>
+				</ul>
+			</li>';
 	} else {
 		$items .= '<li><a href="' . wp_login_url() . '">' . __( 'Log In' ) . '</a></li>';
 	}
@@ -300,7 +301,7 @@ function admin_default_page() {
 }
 add_filter('login_redirect', 'admin_default_page');
 
-/**empre va a pedir rebaja de peempre va a pedir rebaja de pe
+/**
 * Disable_WP_Toolbar
 **/
 function disable_toolbar() {
