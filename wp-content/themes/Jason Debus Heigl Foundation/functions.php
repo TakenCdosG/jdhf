@@ -273,7 +273,7 @@ function add_login_logout_register_menu( $items, $args ) {
 	}
 
 	if ( is_user_logged_in() ) {
-		$items .= 
+		$items .=
 			'<li class="dropdown">
 				<a class="dropdown-toggle" href="http://jdhf.thinkcreativegroup.com/give-landing/">My Account
 					<span class="caret"></span>
@@ -342,6 +342,24 @@ function new_mail_from_name($old) {
 }
 add_filter('wp_mail_from', 'new_mail_from');
 add_filter('wp_mail_from_name', 'new_mail_from_name');
+
+/**
+* Change default notif email body
+**/
+function emails_custom_copy( $pass_change_mail, $user, $userdata ) {
+	$new_message_txt = __( 'Hi admin_jdhf,
+
+This notice confirms that your password was changed on Jason Debus Heigl Foundation.
+
+If you did not change your password, please contact the Site Administrator at
+keith@kheigl.com
+
+Regards,
+All at Jason Debus Heigl Foundation' );
+	$pass_change_mail[ 'message' ] = $new_message_txt;
+	return $pass_change_mail;
+}
+add_filter( 'password_change_email', 'emails_custom_copy', 10, 3 );
 
 /*Current Year Shortcode*/
 function year_shortcode() {
