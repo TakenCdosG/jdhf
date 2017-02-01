@@ -7,28 +7,27 @@
 					'-moz-box-shadow':    'none',
 					'-webkit-box-shadow': 'none',
 					'background-color':   'transparent',
-					'transition':         'background-color 0.1s ease-out',
-					'-webkit-transition': 'background-color 0.1s ease-out',
-					'-moz-transition': 'background-color 0.1s ease-out',
-					'-o-transition': 'background-color 0.1s ease-out',
-					'top':           '50px'
+					'transition':         'all 0.4s ease-out',
+					'-webkit-transition': 'all 0.4s ease-out',
+					'-moz-transition': 'all 0.4s ease-out',
+					'-o-transition': 'all 0.4s ease-out',
+					'padding-top':           '50px',
 
 				 });
 			$('.menu img').css({
 					'height':           'initial',
-					'width':           'initial'		
+					'width':           '335px'		
 			});
 		}
 		else {
 			$('header').css({
 					'background-color': '#333',
-					'transition':       'background-color 0.1s ease-out',
-					'-webkit-transition': 'background-color 0.1s ease-out',
-					'-moz-transition': 'background-color 0.1s ease-out',
-					'-o-transition': 'background-color 0.1s ease-out',
-					'top':              '0px',
-					'height':           '102px',
-					'padding':           '12px',
+					'transition':       'all 0.4s ease-out',
+					'-webkit-transition': 'all 0.4s ease-out',
+					'-moz-transition': 'all 0.4s ease-out',
+					'-o-transition': 'all 0.4s ease-out',
+					'height':           'auto',
+					'padding-top':           '12px',
 			 });
 			$('.menu img').css({
 					'height':           '78px',
