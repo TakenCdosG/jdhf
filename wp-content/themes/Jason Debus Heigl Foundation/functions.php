@@ -355,8 +355,7 @@ If you did not change your password, please contact the Site Administrator at:
 keith@kheigl.com
 
 Regards,
-All at Jason Debus Heigl Foundation'
- . echo site_url(); . );
+All at Jason Debus Heigl Foundation');
 	$pass_change_mail[ 'message' ] = $new_message_txt;
 	return $pass_change_mail;
 }
