@@ -347,15 +347,16 @@ add_filter('wp_mail_from_name', 'new_mail_from_name');
 * Change default notif email body
 **/
 function emails_custom_copy( $pass_change_mail, $user, $userdata ) {
-	$new_message_txt = __( 'Hi admin_jdhf,
+	$new_message_txt = __( 'Hi,
 
 This notice confirms that your password was changed on Jason Debus Heigl Foundation.
 
-If you did not change your password, please contact the Site Administrator at
+If you did not change your password, please contact the Site Administrator at:
 keith@kheigl.com
 
 Regards,
-All at Jason Debus Heigl Foundation' );
+All at Jason Debus Heigl Foundation'
+ . echo site_url(); . );
 	$pass_change_mail[ 'message' ] = $new_message_txt;
 	return $pass_change_mail;
 }
