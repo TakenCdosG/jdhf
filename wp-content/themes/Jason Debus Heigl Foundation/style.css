@@ -812,8 +812,9 @@ img.aligncenter {
 	margin-bottom: 15px;
 }
 .dog-detail .meta-holder{
-	margin-bottom: 35px;
+	margin-bottom: 0px;
 	position: relative;
+	margin-top: 40px;
 }
 .dog-detail .meta-holder .meta{
 	font-size: 26px;
@@ -1180,8 +1181,18 @@ img.aligncenter {
 	text-align: center;
 	color:#302c2d;
 }
-/*Media queries*/
 
+/**
+* Sassy_Share
+**/
+.heateor_sss_horizontal_sharing {
+	margin-top: -170px !important;
+	margin-bottom: 158px !important;
+	margin-left: -2px !important;
+}
+
+
+/*Media queries*/
 /* Large Devices, Wide Screens */
 @media (max-width : 1200px) {
 
@@ -1451,6 +1462,11 @@ img.aligncenter {
 	/*footer*/
 	.pre-footer .container{
 		width:70%;
+	}
+	.heateor_sss_horizontal_sharing {
+		margin-top: -229px !important;
+		margin-bottom: 158px !important;
+		margin-left: -2px !important;
 	}
 }
 
