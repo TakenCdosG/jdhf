@@ -7,7 +7,7 @@
 global $current_user, $wp_roles;
 
 /* Load the registration file. */
-//require_once( ABSPATH . WPINC . '/registration.php' ); //deprecated since 3.1
+//require_once( ABSPATH . WPINC . '/registration.php' );
 $error = array();
 /* If profile was saved, update profile. */
 if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action'] ) && $_POST['action'] == 'update-user' ) {
