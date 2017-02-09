@@ -1183,6 +1183,87 @@ img.aligncenter {
 }
 
 /**
+* Profile_Update
+**/
+#wppb-edit-user{
+	background-color: #9FD7E3 !important;
+}
+#wppb-edit-user input{
+	width: 350px;
+}
+#wppb-edit-user input[type="submit"]{
+	background-color: #ef9f08 !important;
+	border: none;
+	color: #ffffff !important;
+	font-size: 26px !important;
+	font-weight: 700 !important;
+	height: 38px !important;
+	line-height: 25px !important;
+	margin-bottom: 35px;
+	margin-left: 40px !important;
+	margin-top: 30px;
+	width: auto !important;
+}
+#wppb-edit-user label{
+	display: block !important;
+	margin-top: 18px;
+}
+#wppb-edit-user ul{
+	list-style: none !important;
+}
+.wppb-required{
+	color: #B94A48;
+}
+.wppb-default-name-heading h4{
+	font-size: 30px !important;
+	color: #000000;
+	text-transform: uppercase;
+	padding-top: 39px;
+}
+.wppb-default-username label{
+	margin-right: 15px;
+}
+.wppb-default-first-name{
+	clear: none;
+	float: left;
+}
+.wppb-default-last-name{
+	display: inline-block;
+	margin-left: 64px;
+}
+.wppb-default-contact-info-heading h4{
+	font-size: 30px !important;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.wppb-default-e-mail{
+	clear: none;
+	float: left;
+}
+.wppb-default-website{
+	display: inline-block;
+	margin-left: 64px;
+}
+.wppb-default-about-yourself-heading h4{
+	font-size: 30px !important;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.wppb-default-biographical-info textarea{
+	width: 764px;
+}
+.wppb-default-password{
+	clear: none;
+	float: left;
+}
+.wppb-default-repeat-password{
+	display: inline-block;
+	margin-left: 64px;
+}
+
+/**
 * Sassy_Share
 **/
 .heateor_sss_horizontal_sharing {
@@ -1190,7 +1271,6 @@ img.aligncenter {
 	margin-bottom: 158px !important;
 	margin-left: -2px !important;
 }
-
 
 /*Media queries*/
 /* Large Devices, Wide Screens */
