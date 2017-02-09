@@ -1705,6 +1705,10 @@ img.aligncenter {
 		width: auto;
 		min-width: 92%;
 	}
+	.default_field_display-name{
+		width: 50%;
+		min-width: 92%;
+	}
 }
 @media only screen and (max-width: 360px) and (min-width: 341px){
 	#wppb-edit-user input{
@@ -1713,12 +1717,18 @@ img.aligncenter {
 	.wppb-default-biographical-info textarea{
 		width: 238px;
 	}
+	.default_field_display-name{
+		width: 238px;
+	}
 }
 @media only screen and (max-width: 340px) and (min-width: 299px){
 	#wppb-edit-user input{
 		width: 210px;
 	}
 	.wppb-default-biographical-info textarea{
+		width: 210px;
+	}
+	.default_field_display-name{
 		width: 210px;
 	}
 	.wppb-default-name-heading h4{
@@ -1735,5 +1745,8 @@ img.aligncenter {
 	}
 	#wppb-edit-user label{
 		font-size: 17px;
+	}
+	#wppb-user-to-edit{
+		width: 240px;
 	}
 }
