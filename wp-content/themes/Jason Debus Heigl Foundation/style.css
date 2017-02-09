@@ -1653,9 +1653,16 @@ img.aligncenter {
 		padding-left: 56px;
 	}
 }
-
 @media screen and (max-width: 600px){
 	header{
 		top:0;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+	#wppb-edit-user input{
+		width: 286px;
+	}
+	.wppb-default-biographical-info textarea{
+		width: 634px;
 	}
 }
