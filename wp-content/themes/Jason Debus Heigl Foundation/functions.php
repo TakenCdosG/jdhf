@@ -370,3 +370,6 @@ add_shortcode('current_year', 'year_shortcode');
 
 // Enable shortcodes in text widgets
 add_filter('widget_text','do_shortcode');
+
+//mu-plugins_Debugger
+// add_action('wp_footer', 'displayHelloWorld');
