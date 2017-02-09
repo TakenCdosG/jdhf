@@ -1271,6 +1271,9 @@ img.aligncenter {
 	margin-bottom: 158px !important;
 	margin-left: -2px !important;
 }
+.heateor_sss_vertical_sharing{
+	z-index: auto;
+}
 
 /*Media queries*/
 /* Large Devices, Wide Screens */
