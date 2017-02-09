@@ -36,7 +36,13 @@
 			});
 		}
 	};
-
+	function sassyShare() {
+		if (window.location.href.indexOf("success-stories") != -1) {
+			$(".heateor_sss_horizontal_sharing").css({
+				'visibility': 'hidden'
+			});
+		}
+	}
 	$(document).ready(function(){
 		/*Setting type of header*/
 		/*if($('.main-header').next().is('.header')){
@@ -56,6 +62,7 @@
 		});
 
 		sticky();
+		sassyShare();
 	});
 	$(window).on('load', function () {
 			/*Masonry*/
