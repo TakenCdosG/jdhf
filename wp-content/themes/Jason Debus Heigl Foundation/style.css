@@ -1658,11 +1658,82 @@ img.aligncenter {
 		top:0;
 	}
 }
+
+/**
+* Update_Profile_Media
+**/
 @media only screen and (max-width: 991px) and (min-width: 768px){
 	#wppb-edit-user input{
 		width: 286px;
 	}
 	.wppb-default-biographical-info textarea{
 		width: 634px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.wppb-default-first-name{
+		clear: none;
+		float: none;
+	}
+	.wppb-default-last-name{
+		display: block;
+		margin-left: auto;
+	}
+	.wppb-default-e-mail{
+		clear: none;
+		float: none;
+	}
+	.wppb-default-website{
+		display: block;
+		margin-left: auto;
+	}
+	.wppb-default-password{
+		clear: none;
+		float: none;
+	}
+	.wppb-default-repeat-password{
+		display: block;
+		margin-left: auto;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 361px){
+	#wppb-edit-user input{
+		width: auto;
+		min-width: 92%;
+	}
+	.wppb-default-biographical-info textarea{
+		width: auto;
+		min-width: 92%;
+	}
+}
+@media only screen and (max-width: 360px) and (min-width: 341px){
+	#wppb-edit-user input{
+		width: 238px;
+	}
+	.wppb-default-biographical-info textarea{
+		width: 238px;
+	}
+}
+@media only screen and (max-width: 340px) and (min-width: 299px){
+	#wppb-edit-user input{
+		width: 210px;
+	}
+	.wppb-default-biographical-info textarea{
+		width: 210px;
+	}
+	.wppb-default-name-heading h4{
+		font-size: 20px !important;
+		text-transform: uppercase;
+	}
+	.wppb-default-contact-info-heading h4{
+		font-size: 20px !important;
+		text-transform: uppercase;
+	}
+	.wppb-default-about-yourself-heading h4{
+		font-size: 20px !important;
+		text-transform: uppercase;
+	}
+	#wppb-edit-user label{
+		font-size: 17px;
 	}
 }
