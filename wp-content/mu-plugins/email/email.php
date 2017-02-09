@@ -16,7 +16,6 @@ if ( !function_exists( 'wp_new_user_notification' ) ) {
 		$user = new WP_User( $user_id );
 		$userEmail = stripslashes( $user->user_email );
 		$siteUrl = get_site_url();
-		$logoUrl = plugin_dir_url( __FILE__ ).'/sitelogo.gif';
 
 		$subject = 'Welcome to Jason Debus Heigl Foundation';
 		$headers = 'From: Jason Debus Heigl Foundation Webmaster <webmaster@kheigl.com>';
