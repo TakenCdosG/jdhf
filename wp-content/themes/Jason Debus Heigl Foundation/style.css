@@ -1239,7 +1239,7 @@ img.aligncenter {
 }
 .wppb-default-e-mail{
 	clear: none;
-	float: left;
+	float: none;
 }
 .wppb-default-website{
 	display: inline-block;
