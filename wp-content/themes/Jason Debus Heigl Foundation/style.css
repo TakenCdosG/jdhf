@@ -1187,6 +1187,7 @@ img.aligncenter {
 **/
 #wppb-edit-user{
 	background-color: #9FD7E3 !important;
+	padding-top: 20px;
 }
 #wppb-edit-user input{
 	width: 350px;
