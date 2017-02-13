@@ -424,6 +424,7 @@ li.widget{
 	border-top: 20px solid #dadada;
 	border-bottom: 20px solid #dadada;
 	margin:25px auto;
+	z-index: 1000;
 
 }
 .donation-basic .text .give-recurring-donors-choice label{
@@ -1367,7 +1368,7 @@ img.aligncenter {
 	.collapsing {
 		overflow: hidden!important;
 	}
-	.nav li:nth-last-child(-n+2){
+	.nav li:nth-last-child(-n+2), .nav li:nth-last-child(-n+3){
 		border: none;
 		margin: 0;
 	}

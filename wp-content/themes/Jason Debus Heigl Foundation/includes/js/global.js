@@ -44,14 +44,8 @@
 		}
 	}
 	$(document).ready(function(){
-		/*Setting type of header*/
-		/*if($('.main-header').next().is('.header')){
-		}
-		else if ($('.main-header').next().is('.header-ow')) {
-		}
-		else{
-			$( "<div class='no-header'></div>" ).insertAfter( $( ".main-header" ) );
-		}*/
+		/*Dorpdown support for mobile*/
+	    $(".dropdown-toggle").one("click", false);
 		/*Gallery*/
 		$("a.group").fancybox({
 			'transitionIn'	:	'elastic',
