@@ -207,6 +207,7 @@ li.widget{
 	font-weight: 600;
 	font-size: 18px;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	z-index: 100000;
 }
 
 /*----------------------------------
@@ -1625,6 +1626,10 @@ img.aligncenter {
 	.navbar button{
 		position: relative;
 		top:-50px;
+	}
+	#myNavbar{
+		width:264px;
+		float: right;
 	}
 
 }
