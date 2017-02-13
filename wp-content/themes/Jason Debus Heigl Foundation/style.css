@@ -836,6 +836,7 @@ img.aligncenter {
 }
 .dog-detail .content{
 	font-size: 24px;
+	position: relative;
 }
 .dog-detail .content p{
 	margin-bottom: 28px !important;
@@ -1279,9 +1280,12 @@ img.aligncenter {
 * Sassy_Share
 **/
 .heateor_sss_horizontal_sharing {
-	margin-top: -170px !important;
+	position: absolute;
+    top: -169px;
+    left: -2px;
+	/*margin-top: -170px !important;
 	margin-bottom: 158px !important;
-	margin-left: -2px !important;
+	margin-left: -2px !important;*/
 }
 .heateor_sss_vertical_sharing{
 	z-index: auto;
@@ -1559,9 +1563,10 @@ img.aligncenter {
 		width:70%;
 	}
 	.heateor_sss_horizontal_sharing {
-		margin-top: -229px !important;
+		top: -229px;
+		/*margin-top: -229px !important;
 		margin-bottom: 158px !important;
-		margin-left: -2px !important;
+		margin-left: -2px !important;*/
 	}
 }
 
