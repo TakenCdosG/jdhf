@@ -151,7 +151,7 @@ li.widget{
 	margin-bottom: 10px !important;
 }
 .pre-footer h3, .pre-footer a{
-	font-size: 18px !important;
+	font-size: 16px !important;
 }
 .pre-footer h3{
 	font-weight: 800;
@@ -861,6 +861,9 @@ img.aligncenter {
 .general-content.page .content{
 	margin-bottom: 15px;
 }
+.general-content ul{
+	padding-left: 20px; 
+}
 /*Blog*/
 .blog-header{
 	background-color: #68c4db;
@@ -886,6 +889,7 @@ img.aligncenter {
 }
 .blog-list .post .title{
 	color: #454545;
+	margin-bottom:10px;
 }
 .blog-list .post .title a{
 	margin-bottom: 20px;
@@ -1442,7 +1446,7 @@ img.aligncenter {
 
 	/*Footer*/
 	.pre-footer .widget{
-		text-align: center;
+		/*text-align: center;*/
 	}
 	.header{
 		min-height: 500px;
@@ -1582,7 +1586,7 @@ img.aligncenter {
 	}
 	/*footer*/
 	.pre-footer .container{
-		width:80%;
+		width:100%;
 	}
 }
 
