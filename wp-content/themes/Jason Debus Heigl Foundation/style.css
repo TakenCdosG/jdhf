@@ -1446,7 +1446,7 @@ img.aligncenter {
 
 	/*Footer*/
 	.pre-footer .widget{
-		/*text-align: center;*/
+		text-align: center;
 	}
 	.header{
 		min-height: 500px;
