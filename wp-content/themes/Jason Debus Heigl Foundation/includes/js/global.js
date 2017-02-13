@@ -54,6 +54,16 @@
 			'speedOut'		:	200,
 			'overlayShow'	:	false
 		});
+		/*donate scroll*/
+		function checkOffset() {
+		    if($('.donate-button').offset().top + $('.donate-button').height() >= $('#footer').offset().top - 10)
+		        $('.donate-button').css('top', '30%');
+		    if($(document).scrollTop() + window.innerHeight < $('#footer').offset().top)
+		        $('.donate-button').css('top', '54.3%');
+		}
+		$(document).scroll(function() {
+		    checkOffset();
+		});
 
 		sticky();
 		sassyShare();
