@@ -924,6 +924,9 @@ img.aligncenter {
 	font-family: "calluna", serif;
 	font-weight: bold;
 }
+.blog-list .post .readmore a:hover{
+	color:#68c4db;
+}
 .blog-list .post .featured-image{
 	width: 100%;
 	min-height: 312px;
