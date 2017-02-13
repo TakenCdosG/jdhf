@@ -117,19 +117,21 @@
 				<div class="grid">
 					<div class="grid-sizer"></div>
 					<?php
-						$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+						$last_post = get_posts("post_type=post&numberposts=1");
+						$last_post = array($last_post[0]->ID);
 						$args = Array(
 						  'post_type' => 'post',
 						  'posts_per_page' => '6',
-						  'offset' => '1',
-  						  'paged' => $paged
+  						  'paged' => $paged,
+  						  'post__not_in' => $last_post,
 						);
 						// The Query
-						$the_query = new WP_Query( $args );
+						$the_query2 = new WP_Query( $args );
 						// The Loop
-						if ( $the_query->have_posts() ) {
-							while ( $the_query->have_posts() ) {
-								$the_query->the_post();
+						if ( $the_query2->have_posts() ) {
+							while ( $the_query2->have_posts() ) {
+								$the_query2->the_post();
 								$featured_image = get_the_post_thumbnail_url();
 							?>
 								<div class="grid-item"> 
@@ -168,7 +170,7 @@
 							'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 							'format' => '?paged=%#%',
 							'current' => max( 1, get_query_var('paged') ),
-							'total' => $the_query->max_num_pages,
+							'total' => $the_query2->max_num_pages,
 							'prev_text'  => __('<'),
 							'next_text' => __('>')
 						) ); 

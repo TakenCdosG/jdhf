@@ -884,6 +884,7 @@ img.aligncenter {
 }
 .blog-list{
 	padding-top: 20px;
+	min-height: 180px;
 }
 .blog-list .post{
 	border: 1px solid #9a9a9a;
@@ -1592,6 +1593,10 @@ img.aligncenter {
 	/*footer*/
 	.pre-footer .container{
 		width:100%;
+	}
+	/*Gallery*/
+	.dog-detail .gallery .grid-item, .dog-detail .gallery .grid-sizer{
+		width: 100%;
 	}
 }
 

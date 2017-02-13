@@ -21,12 +21,12 @@
           <div class="grid-sizer"></div>
           <?php
             
-            $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $args = Array(
               'post_type' => 'post',
               's' => $s,
               'exact' => 0, 
-              'posts_per_page' => '7',
+              'posts_per_page' => '-1',
               'paged' => $paged
             );
             // The Query
@@ -61,7 +61,7 @@
               /* Restore original Post Data */
               wp_reset_postdata();
             } else {
-              // no posts found
+              echo "<div class='container'><h3>Sorry no posts were found containing the search term  <u>".$s.".</u> Please try <a href='/blog'>searching</a> for something else.</h3></div>";
             }
           ?>
         </div>
