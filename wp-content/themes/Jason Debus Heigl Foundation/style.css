@@ -1311,6 +1311,10 @@ img.aligncenter {
 .heateor_sss_vertical_sharing{
 	z-index: auto;
 }
+.sshare-pages .heateor_sss_sharing_container{
+	top:200px !important;
+	padding: 0 !important;
+}
 
 /*Media queries*/
 /* Large Devices, Wide Screens */
@@ -1469,6 +1473,15 @@ img.aligncenter {
 		position: absolute !important;
 		top: -11px !important;
 		left: -11px !important;
+	}
+	/*Sshare on pages*/
+	.sshare-pages .heateor_sss_sharing_container{
+		width:44px !important;
+		top:200px !important;
+		padding: 0 !important;
+	}
+	.heateor_sss_bottom_sharing .heateorSssSharingArrow{
+		display: block !important;
 	}
 }
 

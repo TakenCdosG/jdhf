@@ -9,6 +9,7 @@
 ?>
 <?php get_header(); ?>
 	<?php
+	echo '<div class="sshare-pages">'.do_shortcode('[Sassy_Social_Share type="floating"]').'</div>';
 	// check if the flexible content field has rows of data
 	if( have_rows('page_content') ):
 		 // loop through the rows of data
