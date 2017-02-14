@@ -196,7 +196,8 @@ li.widget{
 /*Donate Button*/
 .donate-button{
 	position: fixed;
-	right: -112px;
+	/*right: -112px;*/
+	right:0;
 	top:40%;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
@@ -218,12 +219,13 @@ li.widget{
 	position: absolute;
 	left:10px;
 	top:15px;
+	display: none;
 }
 .donate-button:hover{
-	right: 0;
+	right: 0 !important;
 }
 .donate-button:hover i{
-	display: none;
+	display: none !important;
 }
 /*----------------------------------
 *
