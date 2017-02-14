@@ -45,7 +45,9 @@
 	}
 	$(document).ready(function(){
 		/*Dorpdown support for mobile*/
-	    $(".dropdown-toggle").one("click", false);
+	    if($(window).width() < 560){
+	    	$(".dropdown-toggle").one("click", false);
+	    }
 		/*Gallery*/
 		$("a.group").fancybox({
 			'transitionIn'	:	'elastic',
