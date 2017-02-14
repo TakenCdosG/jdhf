@@ -71,7 +71,7 @@
 			</div>
 
 			<!-- Temporal Fixed Button  -->
-			<a href="/donate"><div class="donate-button">Donate</div></a>
+			<a href="/donate"><div class="donate-button"><i class="fa fa-heart-o" aria-hidden="true"></i>Donate</div></a>
 			<script type="text/javascript">
 		</script>
 		</header>

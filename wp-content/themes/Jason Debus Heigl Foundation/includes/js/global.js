@@ -47,6 +47,7 @@
 		/*Dorpdown support for mobile*/
 	    if($(window).width() < 560){
 	    	$(".dropdown-toggle").one("click", false);
+	    	$(".donate-button").one("click", false);
 	    }
 		/*Gallery*/
 		$("a.group").fancybox({
