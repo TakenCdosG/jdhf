@@ -373,3 +373,9 @@ add_filter('widget_text','do_shortcode');
 
 //mu-plugins_Debugger
 // add_action('wp_footer', 'displayHelloWorld');
+
+add_action('give_payment_receipt_before_table', 'my_give_custom_receipt_content');
+
+function my_give_custom_receipt_content(){
+	$donation     = 'Jason Debus Heigl Foundation'; 
+}
