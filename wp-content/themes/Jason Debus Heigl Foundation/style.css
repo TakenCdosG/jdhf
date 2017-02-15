@@ -395,6 +395,9 @@ li.widget{
 	font-size: 60px;
 }
 /*Donation Form Basic*/
+.give-form-title {
+	display: none;
+}
 .donation-basic .text .give-form-wrap{
 	width: 700px;
 	margin: 0 auto;
@@ -409,14 +412,13 @@ li.widget{
 	font-size: 36px;
 	font-weight: bold;
 	padding: 25px 15px;
-	margin-top: 100px;
+	margin-bottom: 0 !important;
 }
 .donation-basic .text .give-form-content-wrap p{
 	background: #000000;
 	color:#FFFFFF;
 	font-size: 24px;
 	padding: 25px 15px;
-	margin-top: -15px;
 }
 .donation-basic .text .give-form{
 	padding: 20px 0 30px;
@@ -486,6 +488,9 @@ li.widget{
 	font-size: 40px;
 	font-weight: 800;
 }
+.donation-w-bg .text{
+	margin-top:50px;
+}
 .donation-w-bg .text .give-form-wrap{
 	width:614px;
 	margin:0 auto;
@@ -498,7 +503,6 @@ li.widget{
 	color:#fff;
 	font-size: 24px;
 	padding: 25px 15px;
-	margin-top: 50px;
 }
 .donation-w-bg .text .give-form{
 	padding: 20px 0 30px;
