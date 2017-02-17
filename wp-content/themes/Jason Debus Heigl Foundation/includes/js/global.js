@@ -1,6 +1,6 @@
 (function ($) {
-
 	function sticky() {
+		/* Fixed navbar with styles */
 		if ($(this).scrollTop() === 0) {
 			$('header').css({
 					'box-shadow':         'none',
@@ -36,6 +36,7 @@
 			});
 		}
 	};
+	/* Hide sassy share on success stories */
 	function sassyShare() {
 		if (window.location.href.indexOf("success-stories") != -1) {
 			$(".heateor_sss_horizontal_sharing").css({
@@ -44,12 +45,12 @@
 		}
 	}
 	$(document).ready(function(){
-		/*Dorpdown support for mobile*/
-	    if($(window).width() < 560){
-	    	$(".dropdown-toggle").one("click", false);
-	    	$(".donate-button").one("click", false);
-	    }
-		/*Gallery*/
+		/* Dropdown support for mobile */
+		if($(window).width() < 560){
+			$(".dropdown-toggle").one("click", false);
+			$(".donate-button").one("click", false);
+		}
+		/* Gallery */
 		$("a.group").fancybox({
 			'transitionIn'	:	'elastic',
 			'transitionOut'	:	'elastic',
@@ -57,29 +58,45 @@
 			'speedOut'		:	200,
 			'overlayShow'	:	false
 		});
-		/*donate scroll*/
 
+		/* Donate scroll */
 		function buttonDonate(){
-
-		    if($('.donate-button').offset().top + $('.donate-button').height() >= $('header').offset().top + 100){
-		        $('.donate-button').css('right', '-112px');
-		    	$('.donate-button i').css('display', 'inline-block');
-		    }
-		    if($(document).scrollTop() <= 150){
-		    	$('.donate-button').css('right', '0');
-		    	$('.donate-button i').css('display', 'none');
-		    }
+			if($('.donate-button').offset().top + $('.donate-button').height() >= $('header').offset().top + 100){
+				$('.donate-button').css('right', '-112px');
+				$('.donate-button i').css('display', 'inline-block');
+			}
+			if($(document).scrollTop() <= 150){
+				$('.donate-button').css('right', '0');
+				$('.donate-button i').css('display', 'none');
+			}
 		}
 		$(document).scroll(function() {
 			console.log($(document).scrollTop());
-		    buttonDonate();
+			buttonDonate();
 		});
+
+		/* MailChimpPro plugin form*/
+		function mail_chimp_pro() {
+			$('#mce-EMAIL').on('input', function() {
+				var value=$.trim($("#mce-EMAIL").val());
+				if( value.length === 0 ) {
+					$('.mc_pro_hide').css({
+						'display': 'none'
+					});
+				} else {
+					$('.mc_pro_hide').css({
+						'display': 'block'
+					});
+				}
+			});
+		}
 
 		sticky();
 		sassyShare();
+		mail_chimp_pro();
 	});
 	$(window).on('load', function () {
-			/*Masonry*/
+		/*Masonry*/
 		var $grid = $('.grid');
 		$grid.masonry({
 			// options
@@ -94,5 +111,4 @@
 	$(window).scroll(function(){
 		sticky();
 	});
-
 })(jQuery);

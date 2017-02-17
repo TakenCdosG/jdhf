@@ -21,7 +21,7 @@
 							<form class="search" action="/" method="get">
 							    <input type="text" placeholder="Search" name="s" id="search" value="<?php the_search_query(); ?>" />
 							    <input type="submit" alt="Search" value="&#xf002;"/>
-							</form>							
+							</form>
 						</div>
 						<div id="categories">
 							<?php wp_dropdown_categories( 'show_option_none=Select category' ); ?>
@@ -39,24 +39,10 @@
 						</div>
 						<!-- Begin MailChimp Signup Form -->
 						<div id="mc_embed_signup">
-						<form action="//jasonheiglfoundation.us11.list-manage.com/subscribe/post?u=d57a7d726b51705cc02e045f4&amp;id=68223ebbfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						    <div id="mc_embed_signup_scroll">
-							
-						<div class="mc-field-group">
-							<label for="mce-EMAIL">Email Address </label>
-							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-						</div>
-							<div id="mce-responses" class="clear">
-								<div class="response" id="mce-error-response" style="display:none"></div>
-								<div class="response" id="mce-success-response" style="display:none"></div>
-							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d57a7d726b51705cc02e045f4_68223ebbfe" tabindex="-1" value=""></div>
-						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						    </div>
-						</form>
+						<?php echo '<div class="mail_chimp_pro">'.do_shortcode('[mc4wp_form id="8772"]').'</div>';?>
 						<div style="clear:both; width:296px; max-width:100%;">We'll never share your email address and you can opt out at any time.</div>
 						</div>
-						<!--End mc_embed_signup-->						
+						<!--End mc_embed_signup-->
 					</div>
 				</div>
 			</div>
@@ -76,27 +62,27 @@
 								$the_query->the_post();
 								$featured_image = get_the_post_thumbnail_url();
 							?>
-								<div class="last-post"> 
+								<div class="last-post">
 									<div class="post">
 										<?php if(!empty($featured_image)): ?><a href="<?php echo get_the_permalink() ?> "><div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )"></div></a> <?php endif;?>
 
 										<div class="right-col">
 											<div class="date">
-												<?php echo get_the_date() ?> 
+												<?php echo get_the_date() ?>
 											</div>
 											<div class="title">
 												<a href="<?php echo get_the_permalink() ?> "><?php echo get_the_title() ?></a>
 											</div>
 											<div class="content">
-												<?php echo get_the_excerpt() ?> 
+												<?php echo get_the_excerpt() ?>
 											</div>
 											<div class="readmore">
 												<a href="<?php echo get_the_permalink() ?> ">Read More</a>
-											</div>	
+											</div>
 										</div>
-										<div class="clearfix"></div>										
+										<div class="clearfix"></div>
 									</div>
-									
+
 								</div>
 							<?php
 							}
@@ -106,7 +92,7 @@
 							// no posts found
 						}
 					?>
-				</div>				
+				</div>
 			</div>
 
 		</div>
@@ -134,10 +120,10 @@
 								$the_query2->the_post();
 								$featured_image = get_the_post_thumbnail_url();
 							?>
-								<div class="grid-item"> 
+								<div class="grid-item">
 									<div class="post">
 										<div class="date">
-											<?php echo get_the_date() ?> 
+											<?php echo get_the_date() ?>
 										</div>
 										<?php if(!empty($featured_image)): ?><a href="<?php echo get_the_permalink() ?> "><div class="featured-image" style="background-image: url( <?php echo get_the_post_thumbnail_url(); ?> )"></div></a> <?php endif;?>
 
@@ -145,13 +131,13 @@
 											<a href="<?php echo get_the_permalink() ?> "><?php echo get_the_title() ?></a>
 										</div>
 										<div class="content">
-											<?php echo get_the_excerpt() ?> 
+											<?php echo get_the_excerpt() ?>
 										</div>
 										<div class="readmore">
 											<a href="<?php echo get_the_permalink() ?> ">Read More</a>
-										</div>											
+										</div>
 									</div>
-									
+
 								</div>
 							<?php
 							}
@@ -173,11 +159,11 @@
 							'total' => $the_query2->max_num_pages,
 							'prev_text'  => __('<'),
 							'next_text' => __('>')
-						) ); 
+						) );
 					?>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 </div>
 <?php get_footer(); ?>

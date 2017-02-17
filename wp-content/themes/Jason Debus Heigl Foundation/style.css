@@ -213,7 +213,7 @@ li.widget{
 		-moz-transition: all 0.35s ease-out;
 		-ms-transition: all 0.35s ease-out;
 		-o-transition: all 0.35s ease-out;
-		transition: all 0.35s ease-out;	
+		transition: all 0.35s ease-out;
 }
 .donate-button i{
 	position: absolute;
@@ -898,7 +898,7 @@ img.aligncenter {
 	margin-bottom: 15px;
 }
 .general-content ul{
-	padding-left: 20px; 
+	padding-left: 20px;
 }
 /*Blog*/
 .blog-header{
@@ -1173,6 +1173,20 @@ img.aligncenter {
 .single-blog .heateorSssSharingArrow{
 	display: none !important;
 }
+.mc_pro_hide{
+	display: none;
+	width: 296px !important;
+}
+.mc_pro_input{
+	float: left !important;
+	width: 213px !important;
+}
+.mc_pro_btn{
+	float: left !important;
+}
+
+
+
 /*Partner Content*/
 .general-content.partner .content{
 	line-height: 2;
