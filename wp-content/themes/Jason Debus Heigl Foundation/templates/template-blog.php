@@ -39,7 +39,7 @@
 						</div>
 						<!-- Begin MailChimp Signup Form -->
 						<div id="mc_embed_signup">
-						<?php echo '<div class="mail_chimp_pro">'.do_shortcode('[mc4wp_form id="8772"]').'</div>';?>
+						<?php echo '<div class="mail_chimp_pro">'.do_shortcode('[mc4wp_form id="8773"]').'</div>';?>
 						<div style="clear:both; width:296px; max-width:100%;">We'll never share your email address and you can opt out at any time.</div>
 						</div>
 						<!--End mc_embed_signup-->
