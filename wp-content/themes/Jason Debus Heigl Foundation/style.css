@@ -579,7 +579,7 @@ li.widget{
 }
 /*Programs*/
 iframe.alignright{
-	margin:0 0 12px 12px;
+	margin:0 0 0 12px;
 }
 .programs{
 	padding: 30px 0;
@@ -1668,7 +1668,7 @@ img.aligncenter {
 	}
 	/*Programs*/
 	iframe.alignright{
-		margin:0 auto !important;
+		margin:0 auto 12px !important;
 		float: none;
 		display: block;
 		clear: both;
