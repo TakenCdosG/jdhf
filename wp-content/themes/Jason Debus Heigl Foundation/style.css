@@ -1172,6 +1172,7 @@ img.aligncenter {
 	position: absolute !important;
 	top: -11px !important;
 	left: -50px !important;
+	z-index: 1;
 }
 .single-blog .heateorSssSharingArrow{
 	display: none !important;
