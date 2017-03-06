@@ -275,7 +275,7 @@ function add_login_logout_register_menu( $items, $args ) {
 	if ( is_user_logged_in() ) {
 		$items .=
 			'<li class="dropdown">
-				<a class="dropdown-toggle" href="http://jdhf.thinkcreativegroup.com/give-landing/">My Account
+				<a class="dropdown-toggle" href="'. get_site_url() .'/give-landing/">My Account
 					<span class="caret"></span>
 				</a>
 				<ul role="menu" class=" dropdown-menu">
@@ -413,7 +413,7 @@ add_filter( 'give_settings_gateways', 'give_basic_fees_add_settings', 10, 1 );
 function give_basic_fees_display_percentage() {
 
 	$fee_percentage = give_get_option( 'basic_fee_percentage' );
-	
+
 	echo '<div class="offset-charge"><input type="checkbox"><label>Offset Credit Card Surcharge</label></div>';
 	echo '<p style="display:none" class="offset-charge-message">' . sprintf( __( 'Plus an additional (<span class="give-basic-fee-amount"></span>).', 'give-basic-fees' ), $fee_percentage . '%' ) . '</p>';
 
@@ -478,7 +478,7 @@ function give_basic_fees_js() {
 				}else{
 					var fee = 0;
 				}
-				
+
 				var new_total = current_total + fee;
 
 				//Set the custom amount input value format properly
