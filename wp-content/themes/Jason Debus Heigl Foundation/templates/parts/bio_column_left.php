@@ -4,7 +4,5 @@
 			<?php the_sub_field('bio_text')?>
 		</div>
 	</div>
-	<div class="left-half-l-container">
-		<div class="left-half-l" style="background-image: url(<?php echo the_sub_field('bio_image')?>);"></div>
-	</div>
+	<div class="left-half-l" style="background-image: url(<?php echo the_sub_field('bio_image')?>);"></div>
 </div>
