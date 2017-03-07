@@ -157,8 +157,8 @@
 							'format' => '?paged=%#%',
 							'current' => max( 1, get_query_var('paged') ),
 							'total' => $the_query2->max_num_pages,
-							'prev_text'  => __('<'),
-							'next_text' => __('>')
+							'prev_text' => __('« Previous'),
+							'next_text' => __('Next »')
 						) );
 					?>
 				</div>

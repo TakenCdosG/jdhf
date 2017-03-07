@@ -35,7 +35,10 @@ a, a:hover{
 	text-decoration: none !important;
 	color:#68c4db;
 }
-/*header*/
+
+/*================================================
+ = @Header
+ ===============================================*/
 header{
 	position: fixed;
 	padding-top:50px;
@@ -122,7 +125,9 @@ header{
 	max-width: 100%;
 }
 
-/*Footer*/
+/*================================================
+ = @Footer
+ ===============================================*/
 .pre-footer{
 	background: #bdbdbd;
 	padding: 30px 0 25px;
@@ -193,7 +198,9 @@ li.widget{
 	display: none;
 }
 
-/*Donate Button*/
+/*================================================
+ = @Donate Button
+ ===============================================*/
 .donate-button{
 	position: fixed;
 	/*right: -112px;*/
@@ -227,12 +234,10 @@ li.widget{
 .donate-button:hover i{
 	display: none !important;
 }
-/*----------------------------------
-*
-*  Panels
-*
-----------------------------------*/
 
+/*================================================
+ = @Panels
+ ===============================================*/
 /*header*/
 .header{
 	min-height: 770px;
@@ -318,7 +323,9 @@ li.widget{
 	float: right;
 }
 
-/* Foster_Form */
+/*================================================
+ = @Foster Form
+ ===============================================*/
 .foster_heading{
 	text-align: center;
 	color: #ffffff;
@@ -365,7 +372,10 @@ li.widget{
 .frm_style_formidable-style.with_frm_style *{
 	border-radius: 0 !important;
 }
-/*statistics*/
+
+/*================================================
+ = @Statistics
+ ===============================================*/
 .statistics{
 	background: #fff;
 	padding:25px 0;
@@ -394,7 +404,11 @@ li.widget{
 .statistics .text strong{
 	font-size: 60px;
 }
-/*Donation Form Basic*/
+
+
+/*================================================
+ = @Donation Form Basic
+ ===============================================*/
 .give-form-title {
 	display: none;
 }
@@ -481,7 +495,11 @@ li.widget{
 	position: relative;
 	top: 2px;
 }
-/*Donations with background image*/
+
+
+/*================================================
+ = @Donation Background Image
+ ===============================================*/
 .donation-w-bg{
 	padding: 40px 0;
 	background-size: cover !important;
@@ -903,7 +921,11 @@ img.aligncenter {
 .general-content ul{
 	padding-left: 20px;
 }
-/*Blog*/
+
+
+/*================================================
+ = @Blog
+ ===============================================*/
 .blog-header{
 	background-color: #68c4db;
 	padding: 30px 0 50px;
@@ -1245,9 +1267,9 @@ img.aligncenter {
 	color:#302c2d;
 }
 
-/**
-* Profile_Update
-**/
+/*================================================
+ = @Profile Update
+ ===============================================*/
 #wppb-edit-user{
 	background-color: #9FD7E3 !important;
 	padding-top: 20px;
@@ -1346,7 +1368,39 @@ img.aligncenter {
 	padding: 0 !important;
 }
 
-/*Media queries*/
+/*================================================
+ = @Custom_Pagination
+ ===============================================*/
+
+/* .pagination span,
+.pagination a {
+	display: inline-block;
+	padding: 2px 10px;
+}
+.pagination a {
+	background-color: #ebebeb;
+	color: #ff3c50;
+}
+.pagination a:hover {
+	background-color: #ff3c50;
+	color: #fff;
+}
+.pagination span.page-num {
+	margin-right: 10px;
+	padding: 0;
+}
+.pagination span.dots {
+	padding: 0;
+	color: gainsboro;
+}
+.pagination span.current {
+	background-color: #ff3c50;
+	color: #fff;
+} */
+
+/*================================================
+ = @Media queries
+ ===============================================*/
 /* Large Devices, Wide Screens */
 @media (max-width : 1200px) {
 
@@ -1517,7 +1571,6 @@ img.aligncenter {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-
 	/*Footer*/
 	.pre-footer .widget{
 		text-align: center;
@@ -1539,7 +1592,6 @@ img.aligncenter {
 		line-height: initial;
 	}
 	.callout h1{
-
 		font-size: 105px !important;
 	}
 	.callout h2{
@@ -1681,9 +1733,7 @@ img.aligncenter {
 
 }
 
-
 /*custom sizes*/
-
 @media (min-width : 567px) and (max-width : 1200px) {
 	/*Mobile menu*/
 	.navbar{
@@ -1755,9 +1805,7 @@ img.aligncenter {
 	}
 }
 
-/**
-* Update_Profile_Media
-**/
+/* Update_Profile_Media */
 @media only screen and (max-width: 991px) and (min-width: 768px){
 	#wppb-edit-user input{
 		width: 286px;

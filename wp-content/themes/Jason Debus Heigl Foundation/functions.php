@@ -237,32 +237,34 @@ add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );
 /**
  * Rewrite tags for plugin
  */
-function dcc_rewrite_tags() {
-	add_rewrite_tag('%dog%', '([^&]+)');
-}
+// function dcc_rewrite_tags() {
+// 	add_rewrite_tag('%dog%', '([^&]+)');
+// }
+// add_action('init', 'dcc_rewrite_tags', 10, 0);
 
-add_action('init', 'dcc_rewrite_tags', 10, 0);
-
-/**
- * Rewrite rules for plugin
- */
-function dcc_rewrite_rules() {
-
-	//add_rewrite_rule('^[^/]*/([^/]*)/?','index.php?dog=page-slug&dog=$matches[1]','top');
-	add_rewrite_rule(
-		'success-stories/(.+?)(/page/([0-9]+))?/?$',
-		'index.php?post_type=dog&dog=page-slug&dog=$matches[1]',
-		'top'
-	);
-	add_rewrite_rule(
-		'adopt/(.+?)(/page/([0-9]+))?/?$',
-		'index.php?post_type=dog&dog=page-slug&dog=$matches[1]',
-		'top'
-	);
-
-}
-
-add_action('init', 'dcc_rewrite_rules', 10, 0);
+// /**
+//  * Rewrite rules for plugin
+//  */
+// function dcc_rewrite_rules() {
+// 	//add_rewrite_rule('^[^/]*/([^/]*)/?','index.php?dog=page-slug&dog=$matches[1]','top');
+// 	add_rewrite_rule(
+// 		'success-stories\/([\s\S]*?)(page\/([0-9]+)\/|paged\/([0-9]+)\/)',
+// 		'index.php?post_type=dog&dog=page-slug&dog=$matches[2]',
+// 		'top'
+// 	);
+// 	add_rewrite_rule(
+// 		'adopt/(.+?)(/page/([0-9]+))?/?$',
+// 		'index.php?post_type=dog&dog=page-slug&dog=$matches[1]',
+// 		'top'
+// 	);
+// 	//add_rewrite_rule('^[^/]*/([^/]*)/?','success-stories/page/2/','top');
+// 	// add_rewrite_rule(
+// 	//     'success-stories(\/page\/([0-9]+)\/?)$',
+// 	//     'index.php?pagename=success-stories&pageds=$matches[1]',
+// 	//     'top'
+// 	// );
+// }
+// add_action('init', 'dcc_rewrite_rules', 10, 0);
 
 /**
 * Login & Logout Menu
@@ -525,5 +527,22 @@ function give_basic_fees_add_fee( $sanitized_amount ) {
 	return $new_total;
 
 }
-
 add_filter( 'give_donation_total', 'give_basic_fees_add_fee', 1, 1 );
+
+/**
+ * Custom pagination for CPT
+ * @param  @string $the_query "Get CPT query"
+ * @return @array            Numbered pagination of posts
+ */
+function post_pagination($the_query) {
+	global $wp_rewrite;
+	$big = 999999999; // need an unlikely integer
+	echo paginate_links( array(
+		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+		'format' => '?paged=%#%',
+		'current' => max( 1, get_query_var('paged') ),
+		'total' => $the_query->max_num_pages,
+		'prev_text' => __('« Previous'),
+		'next_text' => __('Next »')
+	));
+}
