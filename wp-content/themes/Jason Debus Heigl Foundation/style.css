@@ -971,6 +971,9 @@ img.aligncenter {
 	line-height: 1.2;
 	width: 80%;
 }
+img.news_thumbnail {
+	max-width: 100%;
+}
 .blog-list .post .readmore a{
 	color:#302c2d;
 	font-size: 21px;
