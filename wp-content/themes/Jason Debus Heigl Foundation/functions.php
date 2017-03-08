@@ -6,7 +6,9 @@ require_once('includes/functions/wp_bootstrap_navwalker.php');
 add_theme_support('post-thumbnails');
 add_post_type_support( 'dogs', 'thumbnail' );
 
-/*Scripts and styles*/
+/**
+ * Enqueue Scripts and Styles
+ */
 function add_theme_scripts() {
 
 	/*Boostrap css*/
@@ -546,3 +548,114 @@ function post_pagination($the_query) {
 		'next_text' => __('Next »')
 	));
 }
+
+// function captchaG() {
+// 	?>
+// 	<div class="g-recaptcha" data-sitekey="6LezEBgUAAAAAEPkXPGy1odaOcpQbsgVWLk5ROwy"></div>
+// 	<script type="text/javascript">
+// 		jQuery("#submit").click(function(e){
+// 		        var data_2;
+// 		    jQuery.ajax({
+// 		                type: "POST",
+// 		                url: "<?php echo get_template_directory_uri() ?>/google_captcha.php",
+// 		                data: jQuery('#commentform').serialize(),
+// 		                async:false,
+// 		                success: function(data) {
+// 		                 if(data.nocaptcha==="true") {
+// 		               data_2=1;
+// 		                  } else if(data.spam==="true") {
+// 		               data_2=1;
+// 		                  } else {
+// 		               data_2=0;
+// 		                  }
+// 		                }
+// 		            });
+// 		            if(data_2!=0) {
+// 		              e.preventDefault();
+// 		              if(data_2==1) {
+// 		                alert("Please check the captcha");
+// 		              } else {
+// 		                alert("Please Don't spam");
+// 		              }
+// 		            } else {
+// 		                jQuery("#commentform").submit
+// 		           }
+// 		  });
+// 		</script>
+// 	<?php
+// }
+// add_shortcode('g-captcha' , 'captchaG');
+
+/*
+ * Validate ReCAPTCHA
+ *
+ * @param $valid_data
+ * @param $data
+ */
+function give_jdhf_validate_recaptcha($valid_data, $data) {
+	$recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+	$recaptcha_secret_key = '6LezEBgUAAAAAJOArFOUDDEF_NAs3mYdHDpt50CB';
+	$recaptcha_response = wp_remote_post($recaptcha_url . "?secret=" . $recaptcha_secret_key . "&response=" . $data['g-recaptcha-response'] . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
+	$recaptcha_data = wp_remote_retrieve_body($recaptcha_response);
+	if (!isset($recaptcha_data->success) && !$recaptcha_data->success == true) {
+		//User must have validated the reCAPTCHA to proceed with donation
+		if (!isset($data['g-recaptcha-response']) || empty($data['g-recaptcha-response'])) {
+			give_set_error('g-recaptcha-response', __('Please verify that you are not a robot.', 'give'));
+		}
+	}
+	return $valid_data;
+}
+add_action('give_checkout_error_checks', 'give_jdhf_validate_recaptcha', 10, 2);
+
+/**
+ * Enqueue ReCAPTCHA Scripts
+ */
+function give_jdhf_recaptcha_scripts() {
+	wp_register_script('give-captcha-js', 'https://www.google.com/recaptcha/api.js');
+	//If you only want to enqueue on single form pages then uncomment if statement
+	//if ( is_singular( 'give_forms' ) ) {
+	wp_enqueue_script('give-captcha-js');
+	//}
+}
+add_action('wp_enqueue_scripts', 'give_jdhf_recaptcha_scripts');
+
+/**
+ * Print Necessary Inline JS for ReCAPTCHA
+ *
+ * @description: This function outputs the appropriate inline js ReCAPTCHA scripts in the footer
+ */
+function give_jdhf_print_my_inline_script()
+{
+	//Uncomment if statement to control output
+	//if ( is_singular( 'give_forms' ) ) {
+	?>
+	<script type="text/javascript">
+		jQuery(document).on('give_gateway_loaded', function () {
+			grecaptcha.render('give-recaptcha-element', {
+				'sitekey': '6LezEBgUAAAAAEPkXPGy1odaOcpQbsgVWLk5ROwy' //ADD YOU OWN Google API Sitekey here
+			});
+		});
+	</script>
+	<?php
+	//}
+}
+add_action('wp_footer', 'give_jdhf_print_my_inline_script');
+
+
+/**
+ * Custom ReCAPTCHA Form Field
+ *
+ * @description: This function adds the reCAPTCHA field above the "Donation Total" field
+ *
+ * Don't forget to update the sitekey!
+ *
+ * @param $form_id
+ */
+function give_jdhf_custom_form_fields($form_id) {
+	//Add you own google API Site key
+	?>
+	<div id="give-recaptcha-element" class="g-recaptcha" data-sitekey="6LezEBgUAAAAAEPkXPGy1odaOcpQbsgVWLk5ROwy"
+		 style="margin-bottom:1em"></div>
+	<?php
+}
+add_action('give_donation_form_before_submit', 'give_jdhf_custom_form_fields', 10, 1);
