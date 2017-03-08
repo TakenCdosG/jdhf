@@ -420,9 +420,7 @@ function give_basic_fees_display_percentage() {
 
 	echo '<div class="offset-charge"><input type="checkbox"><label>Offset Credit Card Surcharge</label></div>';
 	echo '<p style="display:none" class="offset-charge-message">' . sprintf( __( 'Plus an additional (<span class="give-basic-fee-amount"></span>).', 'give-basic-fees' ), $fee_percentage . '%' ) . '</p>';
-
 }
-
 add_action( 'give_after_donation_amount', 'give_basic_fees_display_percentage', 999 );
 
 
@@ -502,16 +500,10 @@ function give_basic_fees_js() {
 				//Update final total text.
 				$('.give-final-total-amount').text(new_total);
 
-			}
-
 		});
-
 	</script>
-
 <?php }
-
 add_action( 'wp_print_footer_scripts', 'give_basic_fees_js' );
-
 
 /**
  * Adds the fee to the donation upon submit.
@@ -549,7 +541,7 @@ function post_pagination($the_query) {
 	));
 }
 
-/*
+/**
  * Validate ReCAPTCHA
  *
  * @param $valid_data
