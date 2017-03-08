@@ -549,43 +549,6 @@ function post_pagination($the_query) {
 	));
 }
 
-// function captchaG() {
-// 	?>
-// 	<div class="g-recaptcha" data-sitekey="6LezEBgUAAAAAEPkXPGy1odaOcpQbsgVWLk5ROwy"></div>
-// 	<script type="text/javascript">
-// 		jQuery("#submit").click(function(e){
-// 		        var data_2;
-// 		    jQuery.ajax({
-// 		                type: "POST",
-// 		                url: "<?php echo get_template_directory_uri() ?>/google_captcha.php",
-// 		                data: jQuery('#commentform').serialize(),
-// 		                async:false,
-// 		                success: function(data) {
-// 		                 if(data.nocaptcha==="true") {
-// 		               data_2=1;
-// 		                  } else if(data.spam==="true") {
-// 		               data_2=1;
-// 		                  } else {
-// 		               data_2=0;
-// 		                  }
-// 		                }
-// 		            });
-// 		            if(data_2!=0) {
-// 		              e.preventDefault();
-// 		              if(data_2==1) {
-// 		                alert("Please check the captcha");
-// 		              } else {
-// 		                alert("Please Don't spam");
-// 		              }
-// 		            } else {
-// 		                jQuery("#commentform").submit
-// 		           }
-// 		  });
-// 		</script>
-// 	<?php
-// }
-// add_shortcode('g-captcha' , 'captchaG');
-
 /*
  * Validate ReCAPTCHA
  *
