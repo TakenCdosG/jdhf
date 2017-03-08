@@ -581,6 +581,10 @@ li.widget{
 	text-transform: uppercase;
 	font-weight: 700;
 }
+.give-modal {
+	z-index: 10 !important;
+}
+
 /*General Quote*/
 .general-quote{
 	background: #e2f3f7;
